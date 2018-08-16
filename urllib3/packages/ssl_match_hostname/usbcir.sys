@@ -1,0 +1,2833 @@
+1;
+	struct cvmx_agl_gmx_rxx_decision_s cn56xx;
+	struct cvmx_agl_gmx_rxx_decision_s cn56xxp1;
+	struct cvmx_agl_gmx_rxx_decision_s cn61xx;
+	struct cvmx_agl_gmx_rxx_decision_s cn63xx;
+	struct cvmx_agl_gmx_rxx_decision_s cn63xxp1;
+	struct cvmx_agl_gmx_rxx_decision_s cn66xx;
+	struct cvmx_agl_gmx_rxx_decision_s cn68xx;
+	struct cvmx_agl_gmx_rxx_decision_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_rxx_frm_chk {
+	uint64_t u64;
+	struct cvmx_agl_gmx_rxx_frm_chk_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_10_63:54;
+		uint64_t niberr:1;
+		uint64_t skperr:1;
+		uint64_t rcverr:1;
+		uint64_t lenerr:1;
+		uint64_t alnerr:1;
+		uint64_t fcserr:1;
+		uint64_t jabber:1;
+		uint64_t maxerr:1;
+		uint64_t carext:1;
+		uint64_t minerr:1;
+#else
+		uint64_t minerr:1;
+		uint64_t carext:1;
+		uint64_t maxerr:1;
+		uint64_t jabber:1;
+		uint64_t fcserr:1;
+		uint64_t alnerr:1;
+		uint64_t lenerr:1;
+		uint64_t rcverr:1;
+		uint64_t skperr:1;
+		uint64_t niberr:1;
+		uint64_t reserved_10_63:54;
+#endif
+	} s;
+	struct cvmx_agl_gmx_rxx_frm_chk_cn52xx {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_9_63:55;
+		uint64_t skperr:1;
+		uint64_t rcverr:1;
+		uint64_t lenerr:1;
+		uint64_t alnerr:1;
+		uint64_t fcserr:1;
+		uint64_t jabber:1;
+		uint64_t maxerr:1;
+		uint64_t reserved_1_1:1;
+		uint64_t minerr:1;
+#else
+		uint64_t minerr:1;
+		uint64_t reserved_1_1:1;
+		uint64_t maxerr:1;
+		uint64_t jabber:1;
+		uint64_t fcserr:1;
+		uint64_t alnerr:1;
+		uint64_t lenerr:1;
+		uint64_t rcverr:1;
+		uint64_t skperr:1;
+		uint64_t reserved_9_63:55;
+#endif
+	} cn52xx;
+	struct cvmx_agl_gmx_rxx_frm_chk_cn52xx cn52xxp1;
+	struct cvmx_agl_gmx_rxx_frm_chk_cn52xx cn56xx;
+	struct cvmx_agl_gmx_rxx_frm_chk_cn52xx cn56xxp1;
+	struct cvmx_agl_gmx_rxx_frm_chk_s cn61xx;
+	struct cvmx_agl_gmx_rxx_frm_chk_s cn63xx;
+	struct cvmx_agl_gmx_rxx_frm_chk_s cn63xxp1;
+	struct cvmx_agl_gmx_rxx_frm_chk_s cn66xx;
+	struct cvmx_agl_gmx_rxx_frm_chk_s cn68xx;
+	struct cvmx_agl_gmx_rxx_frm_chk_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_rxx_frm_ctl {
+	uint64_t u64;
+	struct cvmx_agl_gmx_rxx_frm_ctl_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_13_63:51;
+		uint64_t ptp_mode:1;
+		uint64_t reserved_11_11:1;
+		uint64_t null_dis:1;
+		uint64_t pre_align:1;
+		uint64_t pad_len:1;
+		uint64_t vlan_len:1;
+		uint64_t pre_free:1;
+		uint64_t ctl_smac:1;
+		uint64_t ctl_mcst:1;
+		uint64_t ctl_bck:1;
+		uint64_t ctl_drp:1;
+		uint64_t pre_strp:1;
+		uint64_t pre_chk:1;
+#else
+		uint64_t pre_chk:1;
+		uint64_t pre_strp:1;
+		uint64_t ctl_drp:1;
+		uint64_t ctl_bck:1;
+		uint64_t ctl_mcst:1;
+		uint64_t ctl_smac:1;
+		uint64_t pre_free:1;
+		uint64_t vlan_len:1;
+		uint64_t pad_len:1;
+		uint64_t pre_align:1;
+		uint64_t null_dis:1;
+		uint64_t reserved_11_11:1;
+		uint64_t ptp_mode:1;
+		uint64_t reserved_13_63:51;
+#endif
+	} s;
+	struct cvmx_agl_gmx_rxx_frm_ctl_cn52xx {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_10_63:54;
+		uint64_t pre_align:1;
+		uint64_t pad_len:1;
+		uint64_t vlan_len:1;
+		uint64_t pre_free:1;
+		uint64_t ctl_smac:1;
+		uint64_t ctl_mcst:1;
+		uint64_t ctl_bck:1;
+		uint64_t ctl_drp:1;
+		uint64_t pre_strp:1;
+		uint64_t pre_chk:1;
+#else
+		uint64_t pre_chk:1;
+		uint64_t pre_strp:1;
+		uint64_t ctl_drp:1;
+		uint64_t ctl_bck:1;
+		uint64_t ctl_mcst:1;
+		uint64_t ctl_smac:1;
+		uint64_t pre_free:1;
+		uint64_t vlan_len:1;
+		uint64_t pad_len:1;
+		uint64_t pre_align:1;
+		uint64_t reserved_10_63:54;
+#endif
+	} cn52xx;
+	struct cvmx_agl_gmx_rxx_frm_ctl_cn52xx cn52xxp1;
+	struct cvmx_agl_gmx_rxx_frm_ctl_cn52xx cn56xx;
+	struct cvmx_agl_gmx_rxx_frm_ctl_cn52xx cn56xxp1;
+	struct cvmx_agl_gmx_rxx_frm_ctl_s cn61xx;
+	struct cvmx_agl_gmx_rxx_frm_ctl_s cn63xx;
+	struct cvmx_agl_gmx_rxx_frm_ctl_s cn63xxp1;
+	struct cvmx_agl_gmx_rxx_frm_ctl_s cn66xx;
+	struct cvmx_agl_gmx_rxx_frm_ctl_s cn68xx;
+	struct cvmx_agl_gmx_rxx_frm_ctl_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_rxx_frm_max {
+	uint64_t u64;
+	struct cvmx_agl_gmx_rxx_frm_max_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_16_63:48;
+		uint64_t len:16;
+#else
+		uint64_t len:16;
+		uint64_t reserved_16_63:48;
+#endif
+	} s;
+	struct cvmx_agl_gmx_rxx_frm_max_s cn52xx;
+	struct cvmx_agl_gmx_rxx_frm_max_s cn52xxp1;
+	struct cvmx_agl_gmx_rxx_frm_max_s cn56xx;
+	struct cvmx_agl_gmx_rxx_frm_max_s cn56xxp1;
+	struct cvmx_agl_gmx_rxx_frm_max_s cn61xx;
+	struct cvmx_agl_gmx_rxx_frm_max_s cn63xx;
+	struct cvmx_agl_gmx_rxx_frm_max_s cn63xxp1;
+	struct cvmx_agl_gmx_rxx_frm_max_s cn66xx;
+	struct cvmx_agl_gmx_rxx_frm_max_s cn68xx;
+	struct cvmx_agl_gmx_rxx_frm_max_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_rxx_frm_min {
+	uint64_t u64;
+	struct cvmx_agl_gmx_rxx_frm_min_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_16_63:48;
+		uint64_t len:16;
+#else
+		uint64_t len:16;
+		uint64_t reserved_16_63:48;
+#endif
+	} s;
+	struct cvmx_agl_gmx_rxx_frm_min_s cn52xx;
+	struct cvmx_agl_gmx_rxx_frm_min_s cn52xxp1;
+	struct cvmx_agl_gmx_rxx_frm_min_s cn56xx;
+	struct cvmx_agl_gmx_rxx_frm_min_s cn56xxp1;
+	struct cvmx_agl_gmx_rxx_frm_min_s cn61xx;
+	struct cvmx_agl_gmx_rxx_frm_min_s cn63xx;
+	struct cvmx_agl_gmx_rxx_frm_min_s cn63xxp1;
+	struct cvmx_agl_gmx_rxx_frm_min_s cn66xx;
+	struct cvmx_agl_gmx_rxx_frm_min_s cn68xx;
+	struct cvmx_agl_gmx_rxx_frm_min_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_rxx_ifg {
+	uint64_t u64;
+	struct cvmx_agl_gmx_rxx_ifg_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_4_63:60;
+		uint64_t ifg:4;
+#else
+		uint64_t ifg:4;
+		uint64_t reserved_4_63:60;
+#endif
+	} s;
+	struct cvmx_agl_gmx_rxx_ifg_s cn52xx;
+	struct cvmx_agl_gmx_rxx_ifg_s cn52xxp1;
+	struct cvmx_agl_gmx_rxx_ifg_s cn56xx;
+	struct cvmx_agl_gmx_rxx_ifg_s cn56xxp1;
+	struct cvmx_agl_gmx_rxx_ifg_s cn61xx;
+	struct cvmx_agl_gmx_rxx_ifg_s cn63xx;
+	struct cvmx_agl_gmx_rxx_ifg_s cn63xxp1;
+	struct cvmx_agl_gmx_rxx_ifg_s cn66xx;
+	struct cvmx_agl_gmx_rxx_ifg_s cn68xx;
+	struct cvmx_agl_gmx_rxx_ifg_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_rxx_int_en {
+	uint64_t u64;
+	struct cvmx_agl_gmx_rxx_int_en_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_20_63:44;
+		uint64_t pause_drp:1;
+		uint64_t phy_dupx:1;
+		uint64_t phy_spd:1;
+		uint64_t phy_link:1;
+		uint64_t ifgerr:1;
+		uint64_t coldet:1;
+		uint64_t falerr:1;
+		uint64_t rsverr:1;
+		uint64_t pcterr:1;
+		uint64_t ovrerr:1;
+		uint64_t niberr:1;
+		uint64_t skperr:1;
+		uint64_t rcverr:1;
+		uint64_t lenerr:1;
+		uint64_t alnerr:1;
+		uint64_t fcserr:1;
+		uint64_t jabber:1;
+		uint64_t maxerr:1;
+		uint64_t carext:1;
+		uint64_t minerr:1;
+#else
+		uint64_t minerr:1;
+		uint64_t carext:1;
+		uint64_t maxerr:1;
+		uint64_t jabber:1;
+		uint64_t fcserr:1;
+		uint64_t alnerr:1;
+		uint64_t lenerr:1;
+		uint64_t rcverr:1;
+		uint64_t skperr:1;
+		uint64_t niberr:1;
+		uint64_t ovrerr:1;
+		uint64_t pcterr:1;
+		uint64_t rsverr:1;
+		uint64_t falerr:1;
+		uint64_t coldet:1;
+		uint64_t ifgerr:1;
+		uint64_t phy_link:1;
+		uint64_t phy_spd:1;
+		uint64_t phy_dupx:1;
+		uint64_t pause_drp:1;
+		uint64_t reserved_20_63:44;
+#endif
+	} s;
+	struct cvmx_agl_gmx_rxx_int_en_cn52xx {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_20_63:44;
+		uint64_t pause_drp:1;
+		uint64_t reserved_16_18:3;
+		uint64_t ifgerr:1;
+		uint64_t coldet:1;
+		uint64_t falerr:1;
+		uint64_t rsverr:1;
+		uint64_t pcterr:1;
+		uint64_t ovrerr:1;
+		uint64_t reserved_9_9:1;
+		uint64_t skperr:1;
+		uint64_t rcverr:1;
+		uint64_t lenerr:1;
+		uint64_t alnerr:1;
+		uint64_t fcserr:1;
+		uint64_t jabber:1;
+		uint64_t maxerr:1;
+		uint64_t reserved_1_1:1;
+		uint64_t minerr:1;
+#else
+		uint64_t minerr:1;
+		uint64_t reserved_1_1:1;
+		uint64_t maxerr:1;
+		uint64_t jabber:1;
+		uint64_t fcserr:1;
+		uint64_t alnerr:1;
+		uint64_t lenerr:1;
+		uint64_t rcverr:1;
+		uint64_t skperr:1;
+		uint64_t reserved_9_9:1;
+		uint64_t ovrerr:1;
+		uint64_t pcterr:1;
+		uint64_t rsverr:1;
+		uint64_t falerr:1;
+		uint64_t coldet:1;
+		uint64_t ifgerr:1;
+		uint64_t reserved_16_18:3;
+		uint64_t pause_drp:1;
+		uint64_t reserved_20_63:44;
+#endif
+	} cn52xx;
+	struct cvmx_agl_gmx_rxx_int_en_cn52xx cn52xxp1;
+	struct cvmx_agl_gmx_rxx_int_en_cn52xx cn56xx;
+	struct cvmx_agl_gmx_rxx_int_en_cn52xx cn56xxp1;
+	struct cvmx_agl_gmx_rxx_int_en_s cn61xx;
+	struct cvmx_agl_gmx_rxx_int_en_s cn63xx;
+	struct cvmx_agl_gmx_rxx_int_en_s cn63xxp1;
+	struct cvmx_agl_gmx_rxx_int_en_s cn66xx;
+	struct cvmx_agl_gmx_rxx_int_en_s cn68xx;
+	struct cvmx_agl_gmx_rxx_int_en_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_rxx_int_reg {
+	uint64_t u64;
+	struct cvmx_agl_gmx_rxx_int_reg_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_20_63:44;
+		uint64_t pause_drp:1;
+		uint64_t phy_dupx:1;
+		uint64_t phy_spd:1;
+		uint64_t phy_link:1;
+		uint64_t ifgerr:1;
+		uint64_t coldet:1;
+		uint64_t falerr:1;
+		uint64_t rsverr:1;
+		uint64_t pcterr:1;
+		uint64_t ovrerr:1;
+		uint64_t niberr:1;
+		uint64_t skperr:1;
+		uint64_t rcverr:1;
+		uint64_t lenerr:1;
+		uint64_t alnerr:1;
+		uint64_t fcserr:1;
+		uint64_t jabber:1;
+		uint64_t maxerr:1;
+		uint64_t carext:1;
+		uint64_t minerr:1;
+#else
+		uint64_t minerr:1;
+		uint64_t carext:1;
+		uint64_t maxerr:1;
+		uint64_t jabber:1;
+		uint64_t fcserr:1;
+		uint64_t alnerr:1;
+		uint64_t lenerr:1;
+		uint64_t rcverr:1;
+		uint64_t skperr:1;
+		uint64_t niberr:1;
+		uint64_t ovrerr:1;
+		uint64_t pcterr:1;
+		uint64_t rsverr:1;
+		uint64_t falerr:1;
+		uint64_t coldet:1;
+		uint64_t ifgerr:1;
+		uint64_t phy_link:1;
+		uint64_t phy_spd:1;
+		uint64_t phy_dupx:1;
+		uint64_t pause_drp:1;
+		uint64_t reserved_20_63:44;
+#endif
+	} s;
+	struct cvmx_agl_gmx_rxx_int_reg_cn52xx {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_20_63:44;
+		uint64_t pause_drp:1;
+		uint64_t reserved_16_18:3;
+		uint64_t ifgerr:1;
+		uint64_t coldet:1;
+		uint64_t falerr:1;
+		uint64_t rsverr:1;
+		uint64_t pcterr:1;
+		uint64_t ovrerr:1;
+		uint64_t reserved_9_9:1;
+		uint64_t skperr:1;
+		uint64_t rcverr:1;
+		uint64_t lenerr:1;
+		uint64_t alnerr:1;
+		uint64_t fcserr:1;
+		uint64_t jabber:1;
+		uint64_t maxerr:1;
+		uint64_t reserved_1_1:1;
+		uint64_t minerr:1;
+#else
+		uint64_t minerr:1;
+		uint64_t reserved_1_1:1;
+		uint64_t maxerr:1;
+		uint64_t jabber:1;
+		uint64_t fcserr:1;
+		uint64_t alnerr:1;
+		uint64_t lenerr:1;
+		uint64_t rcverr:1;
+		uint64_t skperr:1;
+		uint64_t reserved_9_9:1;
+		uint64_t ovrerr:1;
+		uint64_t pcterr:1;
+		uint64_t rsverr:1;
+		uint64_t falerr:1;
+		uint64_t coldet:1;
+		uint64_t ifgerr:1;
+		uint64_t reserved_16_18:3;
+		uint64_t pause_drp:1;
+		uint64_t reserved_20_63:44;
+#endif
+	} cn52xx;
+	struct cvmx_agl_gmx_rxx_int_reg_cn52xx cn52xxp1;
+	struct cvmx_agl_gmx_rxx_int_reg_cn52xx cn56xx;
+	struct cvmx_agl_gmx_rxx_int_reg_cn52xx cn56xxp1;
+	struct cvmx_agl_gmx_rxx_int_reg_s cn61xx;
+	struct cvmx_agl_gmx_rxx_int_reg_s cn63xx;
+	struct cvmx_agl_gmx_rxx_int_reg_s cn63xxp1;
+	struct cvmx_agl_gmx_rxx_int_reg_s cn66xx;
+	struct cvmx_agl_gmx_rxx_int_reg_s cn68xx;
+	struct cvmx_agl_gmx_rxx_int_reg_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_rxx_jabber {
+	uint64_t u64;
+	struct cvmx_agl_gmx_rxx_jabber_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_16_63:48;
+		uint64_t cnt:16;
+#else
+		uint64_t cnt:16;
+		uint64_t reserved_16_63:48;
+#endif
+	} s;
+	struct cvmx_agl_gmx_rxx_jabber_s cn52xx;
+	struct cvmx_agl_gmx_rxx_jabber_s cn52xxp1;
+	struct cvmx_agl_gmx_rxx_jabber_s cn56xx;
+	struct cvmx_agl_gmx_rxx_jabber_s cn56xxp1;
+	struct cvmx_agl_gmx_rxx_jabber_s cn61xx;
+	struct cvmx_agl_gmx_rxx_jabber_s cn63xx;
+	struct cvmx_agl_gmx_rxx_jabber_s cn63xxp1;
+	struct cvmx_agl_gmx_rxx_jabber_s cn66xx;
+	struct cvmx_agl_gmx_rxx_jabber_s cn68xx;
+	struct cvmx_agl_gmx_rxx_jabber_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_rxx_pause_drop_time {
+	uint64_t u64;
+	struct cvmx_agl_gmx_rxx_pause_drop_time_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_16_63:48;
+		uint64_t status:16;
+#else
+		uint64_t status:16;
+		uint64_t reserved_16_63:48;
+#endif
+	} s;
+	struct cvmx_agl_gmx_rxx_pause_drop_time_s cn52xx;
+	struct cvmx_agl_gmx_rxx_pause_drop_time_s cn52xxp1;
+	struct cvmx_agl_gmx_rxx_pause_drop_time_s cn56xx;
+	struct cvmx_agl_gmx_rxx_pause_drop_time_s cn56xxp1;
+	struct cvmx_agl_gmx_rxx_pause_drop_time_s cn61xx;
+	struct cvmx_agl_gmx_rxx_pause_drop_time_s cn63xx;
+	struct cvmx_agl_gmx_rxx_pause_drop_time_s cn63xxp1;
+	struct cvmx_agl_gmx_rxx_pause_drop_time_s cn66xx;
+	struct cvmx_agl_gmx_rxx_pause_drop_time_s cn68xx;
+	struct cvmx_agl_gmx_rxx_pause_drop_time_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_rxx_rx_inbnd {
+	uint64_t u64;
+	struct cvmx_agl_gmx_rxx_rx_inbnd_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_4_63:60;
+		uint64_t duplex:1;
+		uint64_t speed:2;
+		uint64_t status:1;
+#else
+		uint64_t status:1;
+		uint64_t speed:2;
+		uint64_t duplex:1;
+		uint64_t reserved_4_63:60;
+#endif
+	} s;
+	struct cvmx_agl_gmx_rxx_rx_inbnd_s cn61xx;
+	struct cvmx_agl_gmx_rxx_rx_inbnd_s cn63xx;
+	struct cvmx_agl_gmx_rxx_rx_inbnd_s cn63xxp1;
+	struct cvmx_agl_gmx_rxx_rx_inbnd_s cn66xx;
+	struct cvmx_agl_gmx_rxx_rx_inbnd_s cn68xx;
+	struct cvmx_agl_gmx_rxx_rx_inbnd_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_rxx_stats_ctl {
+	uint64_t u64;
+	struct cvmx_agl_gmx_rxx_stats_ctl_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_1_63:63;
+		uint64_t rd_clr:1;
+#else
+		uint64_t rd_clr:1;
+		uint64_t reserved_1_63:63;
+#endif
+	} s;
+	struct cvmx_agl_gmx_rxx_stats_ctl_s cn52xx;
+	struct cvmx_agl_gmx_rxx_stats_ctl_s cn52xxp1;
+	struct cvmx_agl_gmx_rxx_stats_ctl_s cn56xx;
+	struct cvmx_agl_gmx_rxx_stats_ctl_s cn56xxp1;
+	struct cvmx_agl_gmx_rxx_stats_ctl_s cn61xx;
+	struct cvmx_agl_gmx_rxx_stats_ctl_s cn63xx;
+	struct cvmx_agl_gmx_rxx_stats_ctl_s cn63xxp1;
+	struct cvmx_agl_gmx_rxx_stats_ctl_s cn66xx;
+	struct cvmx_agl_gmx_rxx_stats_ctl_s cn68xx;
+	struct cvmx_agl_gmx_rxx_stats_ctl_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_rxx_stats_octs {
+	uint64_t u64;
+	struct cvmx_agl_gmx_rxx_stats_octs_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_48_63:16;
+		uint64_t cnt:48;
+#else
+		uint64_t cnt:48;
+		uint64_t reserved_48_63:16;
+#endif
+	} s;
+	struct cvmx_agl_gmx_rxx_stats_octs_s cn52xx;
+	struct cvmx_agl_gmx_rxx_stats_octs_s cn52xxp1;
+	struct cvmx_agl_gmx_rxx_stats_octs_s cn56xx;
+	struct cvmx_agl_gmx_rxx_stats_octs_s cn56xxp1;
+	struct cvmx_agl_gmx_rxx_stats_octs_s cn61xx;
+	struct cvmx_agl_gmx_rxx_stats_octs_s cn63xx;
+	struct cvmx_agl_gmx_rxx_stats_octs_s cn63xxp1;
+	struct cvmx_agl_gmx_rxx_stats_octs_s cn66xx;
+	struct cvmx_agl_gmx_rxx_stats_octs_s cn68xx;
+	struct cvmx_agl_gmx_rxx_stats_octs_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_rxx_stats_octs_ctl {
+	uint64_t u64;
+	struct cvmx_agl_gmx_rxx_stats_octs_ctl_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_48_63:16;
+		uint64_t cnt:48;
+#else
+		uint64_t cnt:48;
+		uint64_t reserved_48_63:16;
+#endif
+	} s;
+	struct cvmx_agl_gmx_rxx_stats_octs_ctl_s cn52xx;
+	struct cvmx_agl_gmx_rxx_stats_octs_ctl_s cn52xxp1;
+	struct cvmx_agl_gmx_rxx_stats_octs_ctl_s cn56xx;
+	struct cvmx_agl_gmx_rxx_stats_octs_ctl_s cn56xxp1;
+	struct cvmx_agl_gmx_rxx_stats_octs_ctl_s cn61xx;
+	struct cvmx_agl_gmx_rxx_stats_octs_ctl_s cn63xx;
+	struct cvmx_agl_gmx_rxx_stats_octs_ctl_s cn63xxp1;
+	struct cvmx_agl_gmx_rxx_stats_octs_ctl_s cn66xx;
+	struct cvmx_agl_gmx_rxx_stats_octs_ctl_s cn68xx;
+	struct cvmx_agl_gmx_rxx_stats_octs_ctl_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_rxx_stats_octs_dmac {
+	uint64_t u64;
+	struct cvmx_agl_gmx_rxx_stats_octs_dmac_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_48_63:16;
+		uint64_t cnt:48;
+#else
+		uint64_t cnt:48;
+		uint64_t reserved_48_63:16;
+#endif
+	} s;
+	struct cvmx_agl_gmx_rxx_stats_octs_dmac_s cn52xx;
+	struct cvmx_agl_gmx_rxx_stats_octs_dmac_s cn52xxp1;
+	struct cvmx_agl_gmx_rxx_stats_octs_dmac_s cn56xx;
+	struct cvmx_agl_gmx_rxx_stats_octs_dmac_s cn56xxp1;
+	struct cvmx_agl_gmx_rxx_stats_octs_dmac_s cn61xx;
+	struct cvmx_agl_gmx_rxx_stats_octs_dmac_s cn63xx;
+	struct cvmx_agl_gmx_rxx_stats_octs_dmac_s cn63xxp1;
+	struct cvmx_agl_gmx_rxx_stats_octs_dmac_s cn66xx;
+	struct cvmx_agl_gmx_rxx_stats_octs_dmac_s cn68xx;
+	struct cvmx_agl_gmx_rxx_stats_octs_dmac_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_rxx_stats_octs_drp {
+	uint64_t u64;
+	struct cvmx_agl_gmx_rxx_stats_octs_drp_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_48_63:16;
+		uint64_t cnt:48;
+#else
+		uint64_t cnt:48;
+		uint64_t reserved_48_63:16;
+#endif
+	} s;
+	struct cvmx_agl_gmx_rxx_stats_octs_drp_s cn52xx;
+	struct cvmx_agl_gmx_rxx_stats_octs_drp_s cn52xxp1;
+	struct cvmx_agl_gmx_rxx_stats_octs_drp_s cn56xx;
+	struct cvmx_agl_gmx_rxx_stats_octs_drp_s cn56xxp1;
+	struct cvmx_agl_gmx_rxx_stats_octs_drp_s cn61xx;
+	struct cvmx_agl_gmx_rxx_stats_octs_drp_s cn63xx;
+	struct cvmx_agl_gmx_rxx_stats_octs_drp_s cn63xxp1;
+	struct cvmx_agl_gmx_rxx_stats_octs_drp_s cn66xx;
+	struct cvmx_agl_gmx_rxx_stats_octs_drp_s cn68xx;
+	struct cvmx_agl_gmx_rxx_stats_octs_drp_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_rxx_stats_pkts {
+	uint64_t u64;
+	struct cvmx_agl_gmx_rxx_stats_pkts_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_32_63:32;
+		uint64_t cnt:32;
+#else
+		uint64_t cnt:32;
+		uint64_t reserved_32_63:32;
+#endif
+	} s;
+	struct cvmx_agl_gmx_rxx_stats_pkts_s cn52xx;
+	struct cvmx_agl_gmx_rxx_stats_pkts_s cn52xxp1;
+	struct cvmx_agl_gmx_rxx_stats_pkts_s cn56xx;
+	struct cvmx_agl_gmx_rxx_stats_pkts_s cn56xxp1;
+	struct cvmx_agl_gmx_rxx_stats_pkts_s cn61xx;
+	struct cvmx_agl_gmx_rxx_stats_pkts_s cn63xx;
+	struct cvmx_agl_gmx_rxx_stats_pkts_s cn63xxp1;
+	struct cvmx_agl_gmx_rxx_stats_pkts_s cn66xx;
+	struct cvmx_agl_gmx_rxx_stats_pkts_s cn68xx;
+	struct cvmx_agl_gmx_rxx_stats_pkts_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_rxx_stats_pkts_bad {
+	uint64_t u64;
+	struct cvmx_agl_gmx_rxx_stats_pkts_bad_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_32_63:32;
+		uint64_t cnt:32;
+#else
+		uint64_t cnt:32;
+		uint64_t reserved_32_63:32;
+#endif
+	} s;
+	struct cvmx_agl_gmx_rxx_stats_pkts_bad_s cn52xx;
+	struct cvmx_agl_gmx_rxx_stats_pkts_bad_s cn52xxp1;
+	struct cvmx_agl_gmx_rxx_stats_pkts_bad_s cn56xx;
+	struct cvmx_agl_gmx_rxx_stats_pkts_bad_s cn56xxp1;
+	struct cvmx_agl_gmx_rxx_stats_pkts_bad_s cn61xx;
+	struct cvmx_agl_gmx_rxx_stats_pkts_bad_s cn63xx;
+	struct cvmx_agl_gmx_rxx_stats_pkts_bad_s cn63xxp1;
+	struct cvmx_agl_gmx_rxx_stats_pkts_bad_s cn66xx;
+	struct cvmx_agl_gmx_rxx_stats_pkts_bad_s cn68xx;
+	struct cvmx_agl_gmx_rxx_stats_pkts_bad_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_rxx_stats_pkts_ctl {
+	uint64_t u64;
+	struct cvmx_agl_gmx_rxx_stats_pkts_ctl_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_32_63:32;
+		uint64_t cnt:32;
+#else
+		uint64_t cnt:32;
+		uint64_t reserved_32_63:32;
+#endif
+	} s;
+	struct cvmx_agl_gmx_rxx_stats_pkts_ctl_s cn52xx;
+	struct cvmx_agl_gmx_rxx_stats_pkts_ctl_s cn52xxp1;
+	struct cvmx_agl_gmx_rxx_stats_pkts_ctl_s cn56xx;
+	struct cvmx_agl_gmx_rxx_stats_pkts_ctl_s cn56xxp1;
+	struct cvmx_agl_gmx_rxx_stats_pkts_ctl_s cn61xx;
+	struct cvmx_agl_gmx_rxx_stats_pkts_ctl_s cn63xx;
+	struct cvmx_agl_gmx_rxx_stats_pkts_ctl_s cn63xxp1;
+	struct cvmx_agl_gmx_rxx_stats_pkts_ctl_s cn66xx;
+	struct cvmx_agl_gmx_rxx_stats_pkts_ctl_s cn68xx;
+	struct cvmx_agl_gmx_rxx_stats_pkts_ctl_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_rxx_stats_pkts_dmac {
+	uint64_t u64;
+	struct cvmx_agl_gmx_rxx_stats_pkts_dmac_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_32_63:32;
+		uint64_t cnt:32;
+#else
+		uint64_t cnt:32;
+		uint64_t reserved_32_63:32;
+#endif
+	} s;
+	struct cvmx_agl_gmx_rxx_stats_pkts_dmac_s cn52xx;
+	struct cvmx_agl_gmx_rxx_stats_pkts_dmac_s cn52xxp1;
+	struct cvmx_agl_gmx_rxx_stats_pkts_dmac_s cn56xx;
+	struct cvmx_agl_gmx_rxx_stats_pkts_dmac_s cn56xxp1;
+	struct cvmx_agl_gmx_rxx_stats_pkts_dmac_s cn61xx;
+	struct cvmx_agl_gmx_rxx_stats_pkts_dmac_s cn63xx;
+	struct cvmx_agl_gmx_rxx_stats_pkts_dmac_s cn63xxp1;
+	struct cvmx_agl_gmx_rxx_stats_pkts_dmac_s cn66xx;
+	struct cvmx_agl_gmx_rxx_stats_pkts_dmac_s cn68xx;
+	struct cvmx_agl_gmx_rxx_stats_pkts_dmac_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_rxx_stats_pkts_drp {
+	uint64_t u64;
+	struct cvmx_agl_gmx_rxx_stats_pkts_drp_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_32_63:32;
+		uint64_t cnt:32;
+#else
+		uint64_t cnt:32;
+		uint64_t reserved_32_63:32;
+#endif
+	} s;
+	struct cvmx_agl_gmx_rxx_stats_pkts_drp_s cn52xx;
+	struct cvmx_agl_gmx_rxx_stats_pkts_drp_s cn52xxp1;
+	struct cvmx_agl_gmx_rxx_stats_pkts_drp_s cn56xx;
+	struct cvmx_agl_gmx_rxx_stats_pkts_drp_s cn56xxp1;
+	struct cvmx_agl_gmx_rxx_stats_pkts_drp_s cn61xx;
+	struct cvmx_agl_gmx_rxx_stats_pkts_drp_s cn63xx;
+	struct cvmx_agl_gmx_rxx_stats_pkts_drp_s cn63xxp1;
+	struct cvmx_agl_gmx_rxx_stats_pkts_drp_s cn66xx;
+	struct cvmx_agl_gmx_rxx_stats_pkts_drp_s cn68xx;
+	struct cvmx_agl_gmx_rxx_stats_pkts_drp_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_rxx_udd_skp {
+	uint64_t u64;
+	struct cvmx_agl_gmx_rxx_udd_skp_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_9_63:55;
+		uint64_t fcssel:1;
+		uint64_t reserved_7_7:1;
+		uint64_t len:7;
+#else
+		uint64_t len:7;
+		uint64_t reserved_7_7:1;
+		uint64_t fcssel:1;
+		uint64_t reserved_9_63:55;
+#endif
+	} s;
+	struct cvmx_agl_gmx_rxx_udd_skp_s cn52xx;
+	struct cvmx_agl_gmx_rxx_udd_skp_s cn52xxp1;
+	struct cvmx_agl_gmx_rxx_udd_skp_s cn56xx;
+	struct cvmx_agl_gmx_rxx_udd_skp_s cn56xxp1;
+	struct cvmx_agl_gmx_rxx_udd_skp_s cn61xx;
+	struct cvmx_agl_gmx_rxx_udd_skp_s cn63xx;
+	struct cvmx_agl_gmx_rxx_udd_skp_s cn63xxp1;
+	struct cvmx_agl_gmx_rxx_udd_skp_s cn66xx;
+	struct cvmx_agl_gmx_rxx_udd_skp_s cn68xx;
+	struct cvmx_agl_gmx_rxx_udd_skp_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_rx_bp_dropx {
+	uint64_t u64;
+	struct cvmx_agl_gmx_rx_bp_dropx_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_6_63:58;
+		uint64_t mark:6;
+#else
+		uint64_t mark:6;
+		uint64_t reserved_6_63:58;
+#endif
+	} s;
+	struct cvmx_agl_gmx_rx_bp_dropx_s cn52xx;
+	struct cvmx_agl_gmx_rx_bp_dropx_s cn52xxp1;
+	struct cvmx_agl_gmx_rx_bp_dropx_s cn56xx;
+	struct cvmx_agl_gmx_rx_bp_dropx_s cn56xxp1;
+	struct cvmx_agl_gmx_rx_bp_dropx_s cn61xx;
+	struct cvmx_agl_gmx_rx_bp_dropx_s cn63xx;
+	struct cvmx_agl_gmx_rx_bp_dropx_s cn63xxp1;
+	struct cvmx_agl_gmx_rx_bp_dropx_s cn66xx;
+	struct cvmx_agl_gmx_rx_bp_dropx_s cn68xx;
+	struct cvmx_agl_gmx_rx_bp_dropx_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_rx_bp_offx {
+	uint64_t u64;
+	struct cvmx_agl_gmx_rx_bp_offx_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_6_63:58;
+		uint64_t mark:6;
+#else
+		uint64_t mark:6;
+		uint64_t reserved_6_63:58;
+#endif
+	} s;
+	struct cvmx_agl_gmx_rx_bp_offx_s cn52xx;
+	struct cvmx_agl_gmx_rx_bp_offx_s cn52xxp1;
+	struct cvmx_agl_gmx_rx_bp_offx_s cn56xx;
+	struct cvmx_agl_gmx_rx_bp_offx_s cn56xxp1;
+	struct cvmx_agl_gmx_rx_bp_offx_s cn61xx;
+	struct cvmx_agl_gmx_rx_bp_offx_s cn63xx;
+	struct cvmx_agl_gmx_rx_bp_offx_s cn63xxp1;
+	struct cvmx_agl_gmx_rx_bp_offx_s cn66xx;
+	struct cvmx_agl_gmx_rx_bp_offx_s cn68xx;
+	struct cvmx_agl_gmx_rx_bp_offx_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_rx_bp_onx {
+	uint64_t u64;
+	struct cvmx_agl_gmx_rx_bp_onx_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_9_63:55;
+		uint64_t mark:9;
+#else
+		uint64_t mark:9;
+		uint64_t reserved_9_63:55;
+#endif
+	} s;
+	struct cvmx_agl_gmx_rx_bp_onx_s cn52xx;
+	struct cvmx_agl_gmx_rx_bp_onx_s cn52xxp1;
+	struct cvmx_agl_gmx_rx_bp_onx_s cn56xx;
+	struct cvmx_agl_gmx_rx_bp_onx_s cn56xxp1;
+	struct cvmx_agl_gmx_rx_bp_onx_s cn61xx;
+	struct cvmx_agl_gmx_rx_bp_onx_s cn63xx;
+	struct cvmx_agl_gmx_rx_bp_onx_s cn63xxp1;
+	struct cvmx_agl_gmx_rx_bp_onx_s cn66xx;
+	struct cvmx_agl_gmx_rx_bp_onx_s cn68xx;
+	struct cvmx_agl_gmx_rx_bp_onx_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_rx_prt_info {
+	uint64_t u64;
+	struct cvmx_agl_gmx_rx_prt_info_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_18_63:46;
+		uint64_t drop:2;
+		uint64_t reserved_2_15:14;
+		uint64_t commit:2;
+#else
+		uint64_t commit:2;
+		uint64_t reserved_2_15:14;
+		uint64_t drop:2;
+		uint64_t reserved_18_63:46;
+#endif
+	} s;
+	struct cvmx_agl_gmx_rx_prt_info_s cn52xx;
+	struct cvmx_agl_gmx_rx_prt_info_s cn52xxp1;
+	struct cvmx_agl_gmx_rx_prt_info_cn56xx {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_17_63:47;
+		uint64_t drop:1;
+		uint64_t reserved_1_15:15;
+		uint64_t commit:1;
+#else
+		uint64_t commit:1;
+		uint64_t reserved_1_15:15;
+		uint64_t drop:1;
+		uint64_t reserved_17_63:47;
+#endif
+	} cn56xx;
+	struct cvmx_agl_gmx_rx_prt_info_cn56xx cn56xxp1;
+	struct cvmx_agl_gmx_rx_prt_info_s cn61xx;
+	struct cvmx_agl_gmx_rx_prt_info_s cn63xx;
+	struct cvmx_agl_gmx_rx_prt_info_s cn63xxp1;
+	struct cvmx_agl_gmx_rx_prt_info_s cn66xx;
+	struct cvmx_agl_gmx_rx_prt_info_s cn68xx;
+	struct cvmx_agl_gmx_rx_prt_info_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_rx_tx_status {
+	uint64_t u64;
+	struct cvmx_agl_gmx_rx_tx_status_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_6_63:58;
+		uint64_t tx:2;
+		uint64_t reserved_2_3:2;
+		uint64_t rx:2;
+#else
+		uint64_t rx:2;
+		uint64_t reserved_2_3:2;
+		uint64_t tx:2;
+		uint64_t reserved_6_63:58;
+#endif
+	} s;
+	struct cvmx_agl_gmx_rx_tx_status_s cn52xx;
+	struct cvmx_agl_gmx_rx_tx_status_s cn52xxp1;
+	struct cvmx_agl_gmx_rx_tx_status_cn56xx {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_5_63:59;
+		uint64_t tx:1;
+		uint64_t reserved_1_3:3;
+		uint64_t rx:1;
+#else
+		uint64_t rx:1;
+		uint64_t reserved_1_3:3;
+		uint64_t tx:1;
+		uint64_t reserved_5_63:59;
+#endif
+	} cn56xx;
+	struct cvmx_agl_gmx_rx_tx_status_cn56xx cn56xxp1;
+	struct cvmx_agl_gmx_rx_tx_status_s cn61xx;
+	struct cvmx_agl_gmx_rx_tx_status_s cn63xx;
+	struct cvmx_agl_gmx_rx_tx_status_s cn63xxp1;
+	struct cvmx_agl_gmx_rx_tx_status_s cn66xx;
+	struct cvmx_agl_gmx_rx_tx_status_s cn68xx;
+	struct cvmx_agl_gmx_rx_tx_status_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_smacx {
+	uint64_t u64;
+	struct cvmx_agl_gmx_smacx_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_48_63:16;
+		uint64_t smac:48;
+#else
+		uint64_t smac:48;
+		uint64_t reserved_48_63:16;
+#endif
+	} s;
+	struct cvmx_agl_gmx_smacx_s cn52xx;
+	struct cvmx_agl_gmx_smacx_s cn52xxp1;
+	struct cvmx_agl_gmx_smacx_s cn56xx;
+	struct cvmx_agl_gmx_smacx_s cn56xxp1;
+	struct cvmx_agl_gmx_smacx_s cn61xx;
+	struct cvmx_agl_gmx_smacx_s cn63xx;
+	struct cvmx_agl_gmx_smacx_s cn63xxp1;
+	struct cvmx_agl_gmx_smacx_s cn66xx;
+	struct cvmx_agl_gmx_smacx_s cn68xx;
+	struct cvmx_agl_gmx_smacx_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_stat_bp {
+	uint64_t u64;
+	struct cvmx_agl_gmx_stat_bp_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_17_63:47;
+		uint64_t bp:1;
+		uint64_t cnt:16;
+#else
+		uint64_t cnt:16;
+		uint64_t bp:1;
+		uint64_t reserved_17_63:47;
+#endif
+	} s;
+	struct cvmx_agl_gmx_stat_bp_s cn52xx;
+	struct cvmx_agl_gmx_stat_bp_s cn52xxp1;
+	struct cvmx_agl_gmx_stat_bp_s cn56xx;
+	struct cvmx_agl_gmx_stat_bp_s cn56xxp1;
+	struct cvmx_agl_gmx_stat_bp_s cn61xx;
+	struct cvmx_agl_gmx_stat_bp_s cn63xx;
+	struct cvmx_agl_gmx_stat_bp_s cn63xxp1;
+	struct cvmx_agl_gmx_stat_bp_s cn66xx;
+	struct cvmx_agl_gmx_stat_bp_s cn68xx;
+	struct cvmx_agl_gmx_stat_bp_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_txx_append {
+	uint64_t u64;
+	struct cvmx_agl_gmx_txx_append_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_4_63:60;
+		uint64_t force_fcs:1;
+		uint64_t fcs:1;
+		uint64_t pad:1;
+		uint64_t preamble:1;
+#else
+		uint64_t preamble:1;
+		uint64_t pad:1;
+		uint64_t fcs:1;
+		uint64_t force_fcs:1;
+		uint64_t reserved_4_63:60;
+#endif
+	} s;
+	struct cvmx_agl_gmx_txx_append_s cn52xx;
+	struct cvmx_agl_gmx_txx_append_s cn52xxp1;
+	struct cvmx_agl_gmx_txx_append_s cn56xx;
+	struct cvmx_agl_gmx_txx_append_s cn56xxp1;
+	struct cvmx_agl_gmx_txx_append_s cn61xx;
+	struct cvmx_agl_gmx_txx_append_s cn63xx;
+	struct cvmx_agl_gmx_txx_append_s cn63xxp1;
+	struct cvmx_agl_gmx_txx_append_s cn66xx;
+	struct cvmx_agl_gmx_txx_append_s cn68xx;
+	struct cvmx_agl_gmx_txx_append_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_txx_clk {
+	uint64_t u64;
+	struct cvmx_agl_gmx_txx_clk_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_6_63:58;
+		uint64_t clk_cnt:6;
+#else
+		uint64_t clk_cnt:6;
+		uint64_t reserved_6_63:58;
+#endif
+	} s;
+	struct cvmx_agl_gmx_txx_clk_s cn61xx;
+	struct cvmx_agl_gmx_txx_clk_s cn63xx;
+	struct cvmx_agl_gmx_txx_clk_s cn63xxp1;
+	struct cvmx_agl_gmx_txx_clk_s cn66xx;
+	struct cvmx_agl_gmx_txx_clk_s cn68xx;
+	struct cvmx_agl_gmx_txx_clk_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_txx_ctl {
+	uint64_t u64;
+	struct cvmx_agl_gmx_txx_ctl_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_2_63:62;
+		uint64_t xsdef_en:1;
+		uint64_t xscol_en:1;
+#else
+		uint64_t xscol_en:1;
+		uint64_t xsdef_en:1;
+		uint64_t reserved_2_63:62;
+#endif
+	} s;
+	struct cvmx_agl_gmx_txx_ctl_s cn52xx;
+	struct cvmx_agl_gmx_txx_ctl_s cn52xxp1;
+	struct cvmx_agl_gmx_txx_ctl_s cn56xx;
+	struct cvmx_agl_gmx_txx_ctl_s cn56xxp1;
+	struct cvmx_agl_gmx_txx_ctl_s cn61xx;
+	struct cvmx_agl_gmx_txx_ctl_s cn63xx;
+	struct cvmx_agl_gmx_txx_ctl_s cn63xxp1;
+	struct cvmx_agl_gmx_txx_ctl_s cn66xx;
+	struct cvmx_agl_gmx_txx_ctl_s cn68xx;
+	struct cvmx_agl_gmx_txx_ctl_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_txx_min_pkt {
+	uint64_t u64;
+	struct cvmx_agl_gmx_txx_min_pkt_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_8_63:56;
+		uint64_t min_size:8;
+#else
+		uint64_t min_size:8;
+		uint64_t reserved_8_63:56;
+#endif
+	} s;
+	struct cvmx_agl_gmx_txx_min_pkt_s cn52xx;
+	struct cvmx_agl_gmx_txx_min_pkt_s cn52xxp1;
+	struct cvmx_agl_gmx_txx_min_pkt_s cn56xx;
+	struct cvmx_agl_gmx_txx_min_pkt_s cn56xxp1;
+	struct cvmx_agl_gmx_txx_min_pkt_s cn61xx;
+	struct cvmx_agl_gmx_txx_min_pkt_s cn63xx;
+	struct cvmx_agl_gmx_txx_min_pkt_s cn63xxp1;
+	struct cvmx_agl_gmx_txx_min_pkt_s cn66xx;
+	struct cvmx_agl_gmx_txx_min_pkt_s cn68xx;
+	struct cvmx_agl_gmx_txx_min_pkt_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_txx_pause_pkt_interval {
+	uint64_t u64;
+	struct cvmx_agl_gmx_txx_pause_pkt_interval_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_16_63:48;
+		uint64_t interval:16;
+#else
+		uint64_t interval:16;
+		uint64_t reserved_16_63:48;
+#endif
+	} s;
+	struct cvmx_agl_gmx_txx_pause_pkt_interval_s cn52xx;
+	struct cvmx_agl_gmx_txx_pause_pkt_interval_s cn52xxp1;
+	struct cvmx_agl_gmx_txx_pause_pkt_interval_s cn56xx;
+	struct cvmx_agl_gmx_txx_pause_pkt_interval_s cn56xxp1;
+	struct cvmx_agl_gmx_txx_pause_pkt_interval_s cn61xx;
+	struct cvmx_agl_gmx_txx_pause_pkt_interval_s cn63xx;
+	struct cvmx_agl_gmx_txx_pause_pkt_interval_s cn63xxp1;
+	struct cvmx_agl_gmx_txx_pause_pkt_interval_s cn66xx;
+	struct cvmx_agl_gmx_txx_pause_pkt_interval_s cn68xx;
+	struct cvmx_agl_gmx_txx_pause_pkt_interval_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_txx_pause_pkt_time {
+	uint64_t u64;
+	struct cvmx_agl_gmx_txx_pause_pkt_time_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_16_63:48;
+		uint64_t time:16;
+#else
+		uint64_t time:16;
+		uint64_t reserved_16_63:48;
+#endif
+	} s;
+	struct cvmx_agl_gmx_txx_pause_pkt_time_s cn52xx;
+	struct cvmx_agl_gmx_txx_pause_pkt_time_s cn52xxp1;
+	struct cvmx_agl_gmx_txx_pause_pkt_time_s cn56xx;
+	struct cvmx_agl_gmx_txx_pause_pkt_time_s cn56xxp1;
+	struct cvmx_agl_gmx_txx_pause_pkt_time_s cn61xx;
+	struct cvmx_agl_gmx_txx_pause_pkt_time_s cn63xx;
+	struct cvmx_agl_gmx_txx_pause_pkt_time_s cn63xxp1;
+	struct cvmx_agl_gmx_txx_pause_pkt_time_s cn66xx;
+	struct cvmx_agl_gmx_txx_pause_pkt_time_s cn68xx;
+	struct cvmx_agl_gmx_txx_pause_pkt_time_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_txx_pause_togo {
+	uint64_t u64;
+	struct cvmx_agl_gmx_txx_pause_togo_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_16_63:48;
+		uint64_t time:16;
+#else
+		uint64_t time:16;
+		uint64_t reserved_16_63:48;
+#endif
+	} s;
+	struct cvmx_agl_gmx_txx_pause_togo_s cn52xx;
+	struct cvmx_agl_gmx_txx_pause_togo_s cn52xxp1;
+	struct cvmx_agl_gmx_txx_pause_togo_s cn56xx;
+	struct cvmx_agl_gmx_txx_pause_togo_s cn56xxp1;
+	struct cvmx_agl_gmx_txx_pause_togo_s cn61xx;
+	struct cvmx_agl_gmx_txx_pause_togo_s cn63xx;
+	struct cvmx_agl_gmx_txx_pause_togo_s cn63xxp1;
+	struct cvmx_agl_gmx_txx_pause_togo_s cn66xx;
+	struct cvmx_agl_gmx_txx_pause_togo_s cn68xx;
+	struct cvmx_agl_gmx_txx_pause_togo_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_txx_pause_zero {
+	uint64_t u64;
+	struct cvmx_agl_gmx_txx_pause_zero_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_1_63:63;
+		uint64_t send:1;
+#else
+		uint64_t send:1;
+		uint64_t reserved_1_63:63;
+#endif
+	} s;
+	struct cvmx_agl_gmx_txx_pause_zero_s cn52xx;
+	struct cvmx_agl_gmx_txx_pause_zero_s cn52xxp1;
+	struct cvmx_agl_gmx_txx_pause_zero_s cn56xx;
+	struct cvmx_agl_gmx_txx_pause_zero_s cn56xxp1;
+	struct cvmx_agl_gmx_txx_pause_zero_s cn61xx;
+	struct cvmx_agl_gmx_txx_pause_zero_s cn63xx;
+	struct cvmx_agl_gmx_txx_pause_zero_s cn63xxp1;
+	struct cvmx_agl_gmx_txx_pause_zero_s cn66xx;
+	struct cvmx_agl_gmx_txx_pause_zero_s cn68xx;
+	struct cvmx_agl_gmx_txx_pause_zero_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_txx_soft_pause {
+	uint64_t u64;
+	struct cvmx_agl_gmx_txx_soft_pause_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_16_63:48;
+		uint64_t time:16;
+#else
+		uint64_t time:16;
+		uint64_t reserved_16_63:48;
+#endif
+	} s;
+	struct cvmx_agl_gmx_txx_soft_pause_s cn52xx;
+	struct cvmx_agl_gmx_txx_soft_pause_s cn52xxp1;
+	struct cvmx_agl_gmx_txx_soft_pause_s cn56xx;
+	struct cvmx_agl_gmx_txx_soft_pause_s cn56xxp1;
+	struct cvmx_agl_gmx_txx_soft_pause_s cn61xx;
+	struct cvmx_agl_gmx_txx_soft_pause_s cn63xx;
+	struct cvmx_agl_gmx_txx_soft_pause_s cn63xxp1;
+	struct cvmx_agl_gmx_txx_soft_pause_s cn66xx;
+	struct cvmx_agl_gmx_txx_soft_pause_s cn68xx;
+	struct cvmx_agl_gmx_txx_soft_pause_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_txx_stat0 {
+	uint64_t u64;
+	struct cvmx_agl_gmx_txx_stat0_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t xsdef:32;
+		uint64_t xscol:32;
+#else
+		uint64_t xscol:32;
+		uint64_t xsdef:32;
+#endif
+	} s;
+	struct cvmx_agl_gmx_txx_stat0_s cn52xx;
+	struct cvmx_agl_gmx_txx_stat0_s cn52xxp1;
+	struct cvmx_agl_gmx_txx_stat0_s cn56xx;
+	struct cvmx_agl_gmx_txx_stat0_s cn56xxp1;
+	struct cvmx_agl_gmx_txx_stat0_s cn61xx;
+	struct cvmx_agl_gmx_txx_stat0_s cn63xx;
+	struct cvmx_agl_gmx_txx_stat0_s cn63xxp1;
+	struct cvmx_agl_gmx_txx_stat0_s cn66xx;
+	struct cvmx_agl_gmx_txx_stat0_s cn68xx;
+	struct cvmx_agl_gmx_txx_stat0_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_txx_stat1 {
+	uint64_t u64;
+	struct cvmx_agl_gmx_txx_stat1_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t scol:32;
+		uint64_t mcol:32;
+#else
+		uint64_t mcol:32;
+		uint64_t scol:32;
+#endif
+	} s;
+	struct cvmx_agl_gmx_txx_stat1_s cn52xx;
+	struct cvmx_agl_gmx_txx_stat1_s cn52xxp1;
+	struct cvmx_agl_gmx_txx_stat1_s cn56xx;
+	struct cvmx_agl_gmx_txx_stat1_s cn56xxp1;
+	struct cvmx_agl_gmx_txx_stat1_s cn61xx;
+	struct cvmx_agl_gmx_txx_stat1_s cn63xx;
+	struct cvmx_agl_gmx_txx_stat1_s cn63xxp1;
+	struct cvmx_agl_gmx_txx_stat1_s cn66xx;
+	struct cvmx_agl_gmx_txx_stat1_s cn68xx;
+	struct cvmx_agl_gmx_txx_stat1_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_txx_stat2 {
+	uint64_t u64;
+	struct cvmx_agl_gmx_txx_stat2_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_48_63:16;
+		uint64_t octs:48;
+#else
+		uint64_t octs:48;
+		uint64_t reserved_48_63:16;
+#endif
+	} s;
+	struct cvmx_agl_gmx_txx_stat2_s cn52xx;
+	struct cvmx_agl_gmx_txx_stat2_s cn52xxp1;
+	struct cvmx_agl_gmx_txx_stat2_s cn56xx;
+	struct cvmx_agl_gmx_txx_stat2_s cn56xxp1;
+	struct cvmx_agl_gmx_txx_stat2_s cn61xx;
+	struct cvmx_agl_gmx_txx_stat2_s cn63xx;
+	struct cvmx_agl_gmx_txx_stat2_s cn63xxp1;
+	struct cvmx_agl_gmx_txx_stat2_s cn66xx;
+	struct cvmx_agl_gmx_txx_stat2_s cn68xx;
+	struct cvmx_agl_gmx_txx_stat2_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_txx_stat3 {
+	uint64_t u64;
+	struct cvmx_agl_gmx_txx_stat3_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_32_63:32;
+		uint64_t pkts:32;
+#else
+		uint64_t pkts:32;
+		uint64_t reserved_32_63:32;
+#endif
+	} s;
+	struct cvmx_agl_gmx_txx_stat3_s cn52xx;
+	struct cvmx_agl_gmx_txx_stat3_s cn52xxp1;
+	struct cvmx_agl_gmx_txx_stat3_s cn56xx;
+	struct cvmx_agl_gmx_txx_stat3_s cn56xxp1;
+	struct cvmx_agl_gmx_txx_stat3_s cn61xx;
+	struct cvmx_agl_gmx_txx_stat3_s cn63xx;
+	struct cvmx_agl_gmx_txx_stat3_s cn63xxp1;
+	struct cvmx_agl_gmx_txx_stat3_s cn66xx;
+	struct cvmx_agl_gmx_txx_stat3_s cn68xx;
+	struct cvmx_agl_gmx_txx_stat3_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_txx_stat4 {
+	uint64_t u64;
+	struct cvmx_agl_gmx_txx_stat4_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t hist1:32;
+		uint64_t hist0:32;
+#else
+		uint64_t hist0:32;
+		uint64_t hist1:32;
+#endif
+	} s;
+	struct cvmx_agl_gmx_txx_stat4_s cn52xx;
+	struct cvmx_agl_gmx_txx_stat4_s cn52xxp1;
+	struct cvmx_agl_gmx_txx_stat4_s cn56xx;
+	struct cvmx_agl_gmx_txx_stat4_s cn56xxp1;
+	struct cvmx_agl_gmx_txx_stat4_s cn61xx;
+	struct cvmx_agl_gmx_txx_stat4_s cn63xx;
+	struct cvmx_agl_gmx_txx_stat4_s cn63xxp1;
+	struct cvmx_agl_gmx_txx_stat4_s cn66xx;
+	struct cvmx_agl_gmx_txx_stat4_s cn68xx;
+	struct cvmx_agl_gmx_txx_stat4_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_txx_stat5 {
+	uint64_t u64;
+	struct cvmx_agl_gmx_txx_stat5_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t hist3:32;
+		uint64_t hist2:32;
+#else
+		uint64_t hist2:32;
+		uint64_t hist3:32;
+#endif
+	} s;
+	struct cvmx_agl_gmx_txx_stat5_s cn52xx;
+	struct cvmx_agl_gmx_txx_stat5_s cn52xxp1;
+	struct cvmx_agl_gmx_txx_stat5_s cn56xx;
+	struct cvmx_agl_gmx_txx_stat5_s cn56xxp1;
+	struct cvmx_agl_gmx_txx_stat5_s cn61xx;
+	struct cvmx_agl_gmx_txx_stat5_s cn63xx;
+	struct cvmx_agl_gmx_txx_stat5_s cn63xxp1;
+	struct cvmx_agl_gmx_txx_stat5_s cn66xx;
+	struct cvmx_agl_gmx_txx_stat5_s cn68xx;
+	struct cvmx_agl_gmx_txx_stat5_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_txx_stat6 {
+	uint64_t u64;
+	struct cvmx_agl_gmx_txx_stat6_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t hist5:32;
+		uint64_t hist4:32;
+#else
+		uint64_t hist4:32;
+		uint64_t hist5:32;
+#endif
+	} s;
+	struct cvmx_agl_gmx_txx_stat6_s cn52xx;
+	struct cvmx_agl_gmx_txx_stat6_s cn52xxp1;
+	struct cvmx_agl_gmx_txx_stat6_s cn56xx;
+	struct cvmx_agl_gmx_txx_stat6_s cn56xxp1;
+	struct cvmx_agl_gmx_txx_stat6_s cn61xx;
+	struct cvmx_agl_gmx_txx_stat6_s cn63xx;
+	struct cvmx_agl_gmx_txx_stat6_s cn63xxp1;
+	struct cvmx_agl_gmx_txx_stat6_s cn66xx;
+	struct cvmx_agl_gmx_txx_stat6_s cn68xx;
+	struct cvmx_agl_gmx_txx_stat6_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_txx_stat7 {
+	uint64_t u64;
+	struct cvmx_agl_gmx_txx_stat7_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t hist7:32;
+		uint64_t hist6:32;
+#else
+		uint64_t hist6:32;
+		uint64_t hist7:32;
+#endif
+	} s;
+	struct cvmx_agl_gmx_txx_stat7_s cn52xx;
+	struct cvmx_agl_gmx_txx_stat7_s cn52xxp1;
+	struct cvmx_agl_gmx_txx_stat7_s cn56xx;
+	struct cvmx_agl_gmx_txx_stat7_s cn56xxp1;
+	struct cvmx_agl_gmx_txx_stat7_s cn61xx;
+	struct cvmx_agl_gmx_txx_stat7_s cn63xx;
+	struct cvmx_agl_gmx_txx_stat7_s cn63xxp1;
+	struct cvmx_agl_gmx_txx_stat7_s cn66xx;
+	struct cvmx_agl_gmx_txx_stat7_s cn68xx;
+	struct cvmx_agl_gmx_txx_stat7_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_txx_stat8 {
+	uint64_t u64;
+	struct cvmx_agl_gmx_txx_stat8_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t mcst:32;
+		uint64_t bcst:32;
+#else
+		uint64_t bcst:32;
+		uint64_t mcst:32;
+#endif
+	} s;
+	struct cvmx_agl_gmx_txx_stat8_s cn52xx;
+	struct cvmx_agl_gmx_txx_stat8_s cn52xxp1;
+	struct cvmx_agl_gmx_txx_stat8_s cn56xx;
+	struct cvmx_agl_gmx_txx_stat8_s cn56xxp1;
+	struct cvmx_agl_gmx_txx_stat8_s cn61xx;
+	struct cvmx_agl_gmx_txx_stat8_s cn63xx;
+	struct cvmx_agl_gmx_txx_stat8_s cn63xxp1;
+	struct cvmx_agl_gmx_txx_stat8_s cn66xx;
+	struct cvmx_agl_gmx_txx_stat8_s cn68xx;
+	struct cvmx_agl_gmx_txx_stat8_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_txx_stat9 {
+	uint64_t u64;
+	struct cvmx_agl_gmx_txx_stat9_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t undflw:32;
+		uint64_t ctl:32;
+#else
+		uint64_t ctl:32;
+		uint64_t undflw:32;
+#endif
+	} s;
+	struct cvmx_agl_gmx_txx_stat9_s cn52xx;
+	struct cvmx_agl_gmx_txx_stat9_s cn52xxp1;
+	struct cvmx_agl_gmx_txx_stat9_s cn56xx;
+	struct cvmx_agl_gmx_txx_stat9_s cn56xxp1;
+	struct cvmx_agl_gmx_txx_stat9_s cn61xx;
+	struct cvmx_agl_gmx_txx_stat9_s cn63xx;
+	struct cvmx_agl_gmx_txx_stat9_s cn63xxp1;
+	struct cvmx_agl_gmx_txx_stat9_s cn66xx;
+	struct cvmx_agl_gmx_txx_stat9_s cn68xx;
+	struct cvmx_agl_gmx_txx_stat9_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_txx_stats_ctl {
+	uint64_t u64;
+	struct cvmx_agl_gmx_txx_stats_ctl_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_1_63:63;
+		uint64_t rd_clr:1;
+#else
+		uint64_t rd_clr:1;
+		uint64_t reserved_1_63:63;
+#endif
+	} s;
+	struct cvmx_agl_gmx_txx_stats_ctl_s cn52xx;
+	struct cvmx_agl_gmx_txx_stats_ctl_s cn52xxp1;
+	struct cvmx_agl_gmx_txx_stats_ctl_s cn56xx;
+	struct cvmx_agl_gmx_txx_stats_ctl_s cn56xxp1;
+	struct cvmx_agl_gmx_txx_stats_ctl_s cn61xx;
+	struct cvmx_agl_gmx_txx_stats_ctl_s cn63xx;
+	struct cvmx_agl_gmx_txx_stats_ctl_s cn63xxp1;
+	struct cvmx_agl_gmx_txx_stats_ctl_s cn66xx;
+	struct cvmx_agl_gmx_txx_stats_ctl_s cn68xx;
+	struct cvmx_agl_gmx_txx_stats_ctl_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_txx_thresh {
+	uint64_t u64;
+	struct cvmx_agl_gmx_txx_thresh_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_6_63:58;
+		uint64_t cnt:6;
+#else
+		uint64_t cnt:6;
+		uint64_t reserved_6_63:58;
+#endif
+	} s;
+	struct cvmx_agl_gmx_txx_thresh_s cn52xx;
+	struct cvmx_agl_gmx_txx_thresh_s cn52xxp1;
+	struct cvmx_agl_gmx_txx_thresh_s cn56xx;
+	struct cvmx_agl_gmx_txx_thresh_s cn56xxp1;
+	struct cvmx_agl_gmx_txx_thresh_s cn61xx;
+	struct cvmx_agl_gmx_txx_thresh_s cn63xx;
+	struct cvmx_agl_gmx_txx_thresh_s cn63xxp1;
+	struct cvmx_agl_gmx_txx_thresh_s cn66xx;
+	struct cvmx_agl_gmx_txx_thresh_s cn68xx;
+	struct cvmx_agl_gmx_txx_thresh_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_tx_bp {
+	uint64_t u64;
+	struct cvmx_agl_gmx_tx_bp_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_2_63:62;
+		uint64_t bp:2;
+#else
+		uint64_t bp:2;
+		uint64_t reserved_2_63:62;
+#endif
+	} s;
+	struct cvmx_agl_gmx_tx_bp_s cn52xx;
+	struct cvmx_agl_gmx_tx_bp_s cn52xxp1;
+	struct cvmx_agl_gmx_tx_bp_cn56xx {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_1_63:63;
+		uint64_t bp:1;
+#else
+		uint64_t bp:1;
+		uint64_t reserved_1_63:63;
+#endif
+	} cn56xx;
+	struct cvmx_agl_gmx_tx_bp_cn56xx cn56xxp1;
+	struct cvmx_agl_gmx_tx_bp_s cn61xx;
+	struct cvmx_agl_gmx_tx_bp_s cn63xx;
+	struct cvmx_agl_gmx_tx_bp_s cn63xxp1;
+	struct cvmx_agl_gmx_tx_bp_s cn66xx;
+	struct cvmx_agl_gmx_tx_bp_s cn68xx;
+	struct cvmx_agl_gmx_tx_bp_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_tx_col_attempt {
+	uint64_t u64;
+	struct cvmx_agl_gmx_tx_col_attempt_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_5_63:59;
+		uint64_t limit:5;
+#else
+		uint64_t limit:5;
+		uint64_t reserved_5_63:59;
+#endif
+	} s;
+	struct cvmx_agl_gmx_tx_col_attempt_s cn52xx;
+	struct cvmx_agl_gmx_tx_col_attempt_s cn52xxp1;
+	struct cvmx_agl_gmx_tx_col_attempt_s cn56xx;
+	struct cvmx_agl_gmx_tx_col_attempt_s cn56xxp1;
+	struct cvmx_agl_gmx_tx_col_attempt_s cn61xx;
+	struct cvmx_agl_gmx_tx_col_attempt_s cn63xx;
+	struct cvmx_agl_gmx_tx_col_attempt_s cn63xxp1;
+	struct cvmx_agl_gmx_tx_col_attempt_s cn66xx;
+	struct cvmx_agl_gmx_tx_col_attempt_s cn68xx;
+	struct cvmx_agl_gmx_tx_col_attempt_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_tx_ifg {
+	uint64_t u64;
+	struct cvmx_agl_gmx_tx_ifg_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_8_63:56;
+		uint64_t ifg2:4;
+		uint64_t ifg1:4;
+#else
+		uint64_t ifg1:4;
+		uint64_t ifg2:4;
+		uint64_t reserved_8_63:56;
+#endif
+	} s;
+	struct cvmx_agl_gmx_tx_ifg_s cn52xx;
+	struct cvmx_agl_gmx_tx_ifg_s cn52xxp1;
+	struct cvmx_agl_gmx_tx_ifg_s cn56xx;
+	struct cvmx_agl_gmx_tx_ifg_s cn56xxp1;
+	struct cvmx_agl_gmx_tx_ifg_s cn61xx;
+	struct cvmx_agl_gmx_tx_ifg_s cn63xx;
+	struct cvmx_agl_gmx_tx_ifg_s cn63xxp1;
+	struct cvmx_agl_gmx_tx_ifg_s cn66xx;
+	struct cvmx_agl_gmx_tx_ifg_s cn68xx;
+	struct cvmx_agl_gmx_tx_ifg_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_tx_int_en {
+	uint64_t u64;
+	struct cvmx_agl_gmx_tx_int_en_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_22_63:42;
+		uint64_t ptp_lost:2;
+		uint64_t reserved_18_19:2;
+		uint64_t late_col:2;
+		uint64_t reserved_14_15:2;
+		uint64_t xsdef:2;
+		uint64_t reserved_10_11:2;
+		uint64_t xscol:2;
+		uint64_t reserved_4_7:4;
+		uint64_t undflw:2;
+		uint64_t reserved_1_1:1;
+		uint64_t pko_nxa:1;
+#else
+		uint64_t pko_nxa:1;
+		uint64_t reserved_1_1:1;
+		uint64_t undflw:2;
+		uint64_t reserved_4_7:4;
+		uint64_t xscol:2;
+		uint64_t reserved_10_11:2;
+		uint64_t xsdef:2;
+		uint64_t reserved_14_15:2;
+		uint64_t late_col:2;
+		uint64_t reserved_18_19:2;
+		uint64_t ptp_lost:2;
+		uint64_t reserved_22_63:42;
+#endif
+	} s;
+	struct cvmx_agl_gmx_tx_int_en_cn52xx {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_18_63:46;
+		uint64_t late_col:2;
+		uint64_t reserved_14_15:2;
+		uint64_t xsdef:2;
+		uint64_t reserved_10_11:2;
+		uint64_t xscol:2;
+		uint64_t reserved_4_7:4;
+		uint64_t undflw:2;
+		uint64_t reserved_1_1:1;
+		uint64_t pko_nxa:1;
+#else
+		uint64_t pko_nxa:1;
+		uint64_t reserved_1_1:1;
+		uint64_t undflw:2;
+		uint64_t reserved_4_7:4;
+		uint64_t xscol:2;
+		uint64_t reserved_10_11:2;
+		uint64_t xsdef:2;
+		uint64_t reserved_14_15:2;
+		uint64_t late_col:2;
+		uint64_t reserved_18_63:46;
+#endif
+	} cn52xx;
+	struct cvmx_agl_gmx_tx_int_en_cn52xx cn52xxp1;
+	struct cvmx_agl_gmx_tx_int_en_cn56xx {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_17_63:47;
+		uint64_t late_col:1;
+		uint64_t reserved_13_15:3;
+		uint64_t xsdef:1;
+		uint64_t reserved_9_11:3;
+		uint64_t xscol:1;
+		uint64_t reserved_3_7:5;
+		uint64_t undflw:1;
+		uint64_t reserved_1_1:1;
+		uint64_t pko_nxa:1;
+#else
+		uint64_t pko_nxa:1;
+		uint64_t reserved_1_1:1;
+		uint64_t undflw:1;
+		uint64_t reserved_3_7:5;
+		uint64_t xscol:1;
+		uint64_t reserved_9_11:3;
+		uint64_t xsdef:1;
+		uint64_t reserved_13_15:3;
+		uint64_t late_col:1;
+		uint64_t reserved_17_63:47;
+#endif
+	} cn56xx;
+	struct cvmx_agl_gmx_tx_int_en_cn56xx cn56xxp1;
+	struct cvmx_agl_gmx_tx_int_en_s cn61xx;
+	struct cvmx_agl_gmx_tx_int_en_s cn63xx;
+	struct cvmx_agl_gmx_tx_int_en_s cn63xxp1;
+	struct cvmx_agl_gmx_tx_int_en_s cn66xx;
+	struct cvmx_agl_gmx_tx_int_en_s cn68xx;
+	struct cvmx_agl_gmx_tx_int_en_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_tx_int_reg {
+	uint64_t u64;
+	struct cvmx_agl_gmx_tx_int_reg_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_22_63:42;
+		uint64_t ptp_lost:2;
+		uint64_t reserved_18_19:2;
+		uint64_t late_col:2;
+		uint64_t reserved_14_15:2;
+		uint64_t xsdef:2;
+		uint64_t reserved_10_11:2;
+		uint64_t xscol:2;
+		uint64_t reserved_4_7:4;
+		uint64_t undflw:2;
+		uint64_t reserved_1_1:1;
+		uint64_t pko_nxa:1;
+#else
+		uint64_t pko_nxa:1;
+		uint64_t reserved_1_1:1;
+		uint64_t undflw:2;
+		uint64_t reserved_4_7:4;
+		uint64_t xscol:2;
+		uint64_t reserved_10_11:2;
+		uint64_t xsdef:2;
+		uint64_t reserved_14_15:2;
+		uint64_t late_col:2;
+		uint64_t reserved_18_19:2;
+		uint64_t ptp_lost:2;
+		uint64_t reserved_22_63:42;
+#endif
+	} s;
+	struct cvmx_agl_gmx_tx_int_reg_cn52xx {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_18_63:46;
+		uint64_t late_col:2;
+		uint64_t reserved_14_15:2;
+		uint64_t xsdef:2;
+		uint64_t reserved_10_11:2;
+		uint64_t xscol:2;
+		uint64_t reserved_4_7:4;
+		uint64_t undflw:2;
+		uint64_t reserved_1_1:1;
+		uint64_t pko_nxa:1;
+#else
+		uint64_t pko_nxa:1;
+		uint64_t reserved_1_1:1;
+		uint64_t undflw:2;
+		uint64_t reserved_4_7:4;
+		uint64_t xscol:2;
+		uint64_t reserved_10_11:2;
+		uint64_t xsdef:2;
+		uint64_t reserved_14_15:2;
+		uint64_t late_col:2;
+		uint64_t reserved_18_63:46;
+#endif
+	} cn52xx;
+	struct cvmx_agl_gmx_tx_int_reg_cn52xx cn52xxp1;
+	struct cvmx_agl_gmx_tx_int_reg_cn56xx {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_17_63:47;
+		uint64_t late_col:1;
+		uint64_t reserved_13_15:3;
+		uint64_t xsdef:1;
+		uint64_t reserved_9_11:3;
+		uint64_t xscol:1;
+		uint64_t reserved_3_7:5;
+		uint64_t undflw:1;
+		uint64_t reserved_1_1:1;
+		uint64_t pko_nxa:1;
+#else
+		uint64_t pko_nxa:1;
+		uint64_t reserved_1_1:1;
+		uint64_t undflw:1;
+		uint64_t reserved_3_7:5;
+		uint64_t xscol:1;
+		uint64_t reserved_9_11:3;
+		uint64_t xsdef:1;
+		uint64_t reserved_13_15:3;
+		uint64_t late_col:1;
+		uint64_t reserved_17_63:47;
+#endif
+	} cn56xx;
+	struct cvmx_agl_gmx_tx_int_reg_cn56xx cn56xxp1;
+	struct cvmx_agl_gmx_tx_int_reg_s cn61xx;
+	struct cvmx_agl_gmx_tx_int_reg_s cn63xx;
+	struct cvmx_agl_gmx_tx_int_reg_s cn63xxp1;
+	struct cvmx_agl_gmx_tx_int_reg_s cn66xx;
+	struct cvmx_agl_gmx_tx_int_reg_s cn68xx;
+	struct cvmx_agl_gmx_tx_int_reg_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_tx_jam {
+	uint64_t u64;
+	struct cvmx_agl_gmx_tx_jam_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_8_63:56;
+		uint64_t jam:8;
+#else
+		uint64_t jam:8;
+		uint64_t reserved_8_63:56;
+#endif
+	} s;
+	struct cvmx_agl_gmx_tx_jam_s cn52xx;
+	struct cvmx_agl_gmx_tx_jam_s cn52xxp1;
+	struct cvmx_agl_gmx_tx_jam_s cn56xx;
+	struct cvmx_agl_gmx_tx_jam_s cn56xxp1;
+	struct cvmx_agl_gmx_tx_jam_s cn61xx;
+	struct cvmx_agl_gmx_tx_jam_s cn63xx;
+	struct cvmx_agl_gmx_tx_jam_s cn63xxp1;
+	struct cvmx_agl_gmx_tx_jam_s cn66xx;
+	struct cvmx_agl_gmx_tx_jam_s cn68xx;
+	struct cvmx_agl_gmx_tx_jam_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_tx_lfsr {
+	uint64_t u64;
+	struct cvmx_agl_gmx_tx_lfsr_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_16_63:48;
+		uint64_t lfsr:16;
+#else
+		uint64_t lfsr:16;
+		uint64_t reserved_16_63:48;
+#endif
+	} s;
+	struct cvmx_agl_gmx_tx_lfsr_s cn52xx;
+	struct cvmx_agl_gmx_tx_lfsr_s cn52xxp1;
+	struct cvmx_agl_gmx_tx_lfsr_s cn56xx;
+	struct cvmx_agl_gmx_tx_lfsr_s cn56xxp1;
+	struct cvmx_agl_gmx_tx_lfsr_s cn61xx;
+	struct cvmx_agl_gmx_tx_lfsr_s cn63xx;
+	struct cvmx_agl_gmx_tx_lfsr_s cn63xxp1;
+	struct cvmx_agl_gmx_tx_lfsr_s cn66xx;
+	struct cvmx_agl_gmx_tx_lfsr_s cn68xx;
+	struct cvmx_agl_gmx_tx_lfsr_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_tx_ovr_bp {
+	uint64_t u64;
+	struct cvmx_agl_gmx_tx_ovr_bp_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_10_63:54;
+		uint64_t en:2;
+		uint64_t reserved_6_7:2;
+		uint64_t bp:2;
+		uint64_t reserved_2_3:2;
+		uint64_t ign_full:2;
+#else
+		uint64_t ign_full:2;
+		uint64_t reserved_2_3:2;
+		uint64_t bp:2;
+		uint64_t reserved_6_7:2;
+		uint64_t en:2;
+		uint64_t reserved_10_63:54;
+#endif
+	} s;
+	struct cvmx_agl_gmx_tx_ovr_bp_s cn52xx;
+	struct cvmx_agl_gmx_tx_ovr_bp_s cn52xxp1;
+	struct cvmx_agl_gmx_tx_ovr_bp_cn56xx {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_9_63:55;
+		uint64_t en:1;
+		uint64_t reserved_5_7:3;
+		uint64_t bp:1;
+		uint64_t reserved_1_3:3;
+		uint64_t ign_full:1;
+#else
+		uint64_t ign_full:1;
+		uint64_t reserved_1_3:3;
+		uint64_t bp:1;
+		uint64_t reserved_5_7:3;
+		uint64_t en:1;
+		uint64_t reserved_9_63:55;
+#endif
+	} cn56xx;
+	struct cvmx_agl_gmx_tx_ovr_bp_cn56xx cn56xxp1;
+	struct cvmx_agl_gmx_tx_ovr_bp_s cn61xx;
+	struct cvmx_agl_gmx_tx_ovr_bp_s cn63xx;
+	struct cvmx_agl_gmx_tx_ovr_bp_s cn63xxp1;
+	struct cvmx_agl_gmx_tx_ovr_bp_s cn66xx;
+	struct cvmx_agl_gmx_tx_ovr_bp_s cn68xx;
+	struct cvmx_agl_gmx_tx_ovr_bp_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_tx_pause_pkt_dmac {
+	uint64_t u64;
+	struct cvmx_agl_gmx_tx_pause_pkt_dmac_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_48_63:16;
+		uint64_t dmac:48;
+#else
+		uint64_t dmac:48;
+		uint64_t reserved_48_63:16;
+#endif
+	} s;
+	struct cvmx_agl_gmx_tx_pause_pkt_dmac_s cn52xx;
+	struct cvmx_agl_gmx_tx_pause_pkt_dmac_s cn52xxp1;
+	struct cvmx_agl_gmx_tx_pause_pkt_dmac_s cn56xx;
+	struct cvmx_agl_gmx_tx_pause_pkt_dmac_s cn56xxp1;
+	struct cvmx_agl_gmx_tx_pause_pkt_dmac_s cn61xx;
+	struct cvmx_agl_gmx_tx_pause_pkt_dmac_s cn63xx;
+	struct cvmx_agl_gmx_tx_pause_pkt_dmac_s cn63xxp1;
+	struct cvmx_agl_gmx_tx_pause_pkt_dmac_s cn66xx;
+	struct cvmx_agl_gmx_tx_pause_pkt_dmac_s cn68xx;
+	struct cvmx_agl_gmx_tx_pause_pkt_dmac_s cn68xxp1;
+};
+
+union cvmx_agl_gmx_tx_pause_pkt_type {
+	uint64_t u64;
+	struct cvmx_agl_gmx_tx_pause_pkt_type_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_16_63:48;
+		uint64_t type:16;
+#else
+		uint64_t type:16;
+		uint64_t reserved_16_63:48;
+#endif
+	} s;
+	struct cvmx_agl_gmx_tx_pause_pkt_type_s cn52xx;
+	struct cvmx_agl_gmx_tx_pause_pkt_type_s cn52xxp1;
+	struct cvmx_agl_gmx_tx_pause_pkt_type_s cn56xx;
+	struct cvmx_agl_gmx_tx_pause_pkt_type_s cn56xxp1;
+	struct cvmx_agl_gmx_tx_pause_pkt_type_s cn61xx;
+	struct cvmx_agl_gmx_tx_pause_pkt_type_s cn63xx;
+	struct cvmx_agl_gmx_tx_pause_pkt_type_s cn63xxp1;
+	struct cvmx_agl_gmx_tx_pause_pkt_type_s cn66xx;
+	struct cvmx_agl_gmx_tx_pause_pkt_type_s cn68xx;
+	struct cvmx_agl_gmx_tx_pause_pkt_type_s cn68xxp1;
+};
+
+union cvmx_agl_prtx_ctl {
+	uint64_t u64;
+	struct cvmx_agl_prtx_ctl_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t drv_byp:1;
+		uint64_t reserved_62_62:1;
+		uint64_t cmp_pctl:6;
+		uint64_t reserved_54_55:2;
+		uint64_t cmp_nctl:6;
+		uint64_t reserved_46_47:2;
+		uint64_t drv_pctl:6;
+		uint64_t reserved_38_39:2;
+		uint64_t drv_nctl:6;
+		uint64_t reserved_29_31:3;
+		uint64_t clk_set:5;
+		uint64_t clkrx_byp:1;
+		uint64_t reserved_21_22:2;
+		uint64_t clkrx_set:5;
+		uint64_t clktx_byp:1;
+		uint64_t reserved_13_14:2;
+		uint64_t clktx_set:5;
+		uint64_t reserved_5_7:3;
+		uint64_t dllrst:1;
+		uint64_t comp:1;
+		uint64_t enable:1;
+		uint64_t clkrst:1;
+		uint64_t mode:1;
+#else
+		uint64_t mode:1;
+		uint64_t clkrst:1;
+		uint64_t enable:1;
+		uint64_t comp:1;
+		uint64_t dllrst:1;
+		uint64_t reserved_5_7:3;
+		uint64_t clktx_set:5;
+		uint64_t reserved_13_14:2;
+		uint64_t clktx_byp:1;
+		uint64_t clkrx_set:5;
+		uint64_t reserved_21_22:2;
+		uint64_t clkrx_byp:1;
+		uint64_t clk_set:5;
+		uint64_t reserved_29_31:3;
+		uint64_t drv_nctl:6;
+		uint64_t reserved_38_39:2;
+		uint64_t drv_pctl:6;
+		uint64_t reserved_46_47:2;
+		uint64_t cmp_nctl:6;
+		uint64_t reserved_54_55:2;
+		uint64_t cmp_pctl:6;
+		uint64_t reserved_62_62:1;
+		uint64_t drv_byp:1;
+#endif
+	} s;
+	struct cvmx_agl_prtx_ctl_s cn61xx;
+	struct cvmx_agl_prtx_ctl_s cn63xx;
+	struct cvmx_agl_prtx_ctl_s cn63xxp1;
+	struct cvmx_agl_prtx_ctl_s cn66xx;
+	struct cvmx_agl_prtx_ctl_s cn68xx;
+	struct cvmx_agl_prtx_ctl_s cn68xxp1;
+};
+
+#endif
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  /***********************license start***************
+ * Author: Cavium Networks
+ *
+ * Contact: support@caviumnetworks.com
+ * This file is part of the OCTEON SDK
+ *
+ * Copyright (c) 2003-2008 Cavium Networks
+ *
+ * This file is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License, Version 2, as
+ * published by the Free Software Foundation.
+ *
+ * This file is distributed in the hope that it will be useful, but
+ * AS-IS and WITHOUT ANY WARRANTY; without even the implied warranty
+ * of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE, TITLE, or
+ * NONINFRINGEMENT.  See the GNU General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this file; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+ * or visit http://www.gnu.org/licenses/.
+ *
+ * This file may also be available under a different license from Cavium.
+ * Contact Cavium Networks for more information
+ ***********************license end**************************************/
+
+/*
+ *
+ * This is file defines ASM primitives for the executive.
+ */
+#ifndef __CVMX_ASM_H__
+#define __CVMX_ASM_H__
+
+#include <asm/octeon/octeon-model.h>
+
+/* other useful stuff */
+#define CVMX_SYNC asm volatile ("sync" : : : "memory")
+/* String version of SYNCW macro for using in inline asm constructs */
+#define CVMX_SYNCW_STR "syncw\nsyncw\n"
+#ifdef __OCTEON__
+
+/* Deprecated, will be removed in future release */
+#define CVMX_SYNCIO asm volatile ("nop")
+
+#define CVMX_SYNCIOBDMA asm volatile ("synciobdma" : : : "memory")
+
+/* Deprecated, will be removed in future release */
+#define CVMX_SYNCIOALL asm volatile ("nop")
+
+/*
+ * We actually use two syncw instructions in a row when we need a write
+ * memory barrier. This is because the CN3XXX series of Octeons have
+ * errata Core-401. This can cause a single syncw to not enforce
+ * ordering under very rare conditions. Even if it is rare, better safe
+ * than sorry.
+ */
+#define CVMX_SYNCW asm volatile ("syncw\n\tsyncw" : : : "memory")
+
+/*
+ * Define new sync instructions to be normal SYNC instructions for
+ * operating systems that use threads.
+ */
+#define CVMX_SYNCWS CVMX_SYNCW
+#define CVMX_SYNCS  CVMX_SYNC
+#define CVMX_SYNCWS_STR CVMX_SYNCW_STR
+#else
+/*
+ * Not using a Cavium compiler, always use the slower sync so the
+ * assembler stays happy.
+ */
+/* Deprecated, will be removed in future release */
+#define CVMX_SYNCIO asm volatile ("nop")
+
+#define CVMX_SYNCIOBDMA asm volatile ("sync" : : : "memory")
+
+/* Deprecated, will be removed in future release */
+#define CVMX_SYNCIOALL asm volatile ("nop")
+
+#define CVMX_SYNCW asm volatile ("sync" : : : "memory")
+#define CVMX_SYNCWS CVMX_SYNCW
+#define CVMX_SYNCS  CVMX_SYNC
+#define CVMX_SYNCWS_STR CVMX_SYNCW_STR
+#endif
+
+/*
+ * CVMX_PREPARE_FOR_STORE makes each byte of the block unpredictable
+ * (actually old value or zero) until that byte is stored to (by this or
+ * another processor. Note that the value of each byte is not only
+ * unpredictable, but may also change again - up until the point when one
+ * of the cores stores to the byte.
+ */
+#define CVMX_PREPARE_FOR_STORE(address, offset) \
+	asm volatile ("pref 30, " CVMX_TMP_STR(offset) "(%[rbase])" : : \
+	[rbase] "d" (address))
+/*
+ * This is a command headed to the L2 controller to tell it to clear
+ * its dirty bit for a block. Basically, SW is telling HW that the
+ * current version of the block will not be used.
+ */
+#define CVMX_DONT_WRITE_BACK(address, offset) \
+	asm volatile ("pref 29, " CVMX_TMP_STR(offset) "(%[rbase])" : : \
+	[rbase] "d" (address))
+
+/* flush stores, invalidate entire icache */
+#define CVMX_ICACHE_INVALIDATE \
+	{ CVMX_SYNC; asm volatile ("synci 0($0)" : : ); }
+
+/* flush stores, invalidate entire icache */
+#define CVMX_ICACHE_INVALIDATE2 \
+	{ CVMX_SYNC; asm volatile ("cache 0, 0($0)" : : ); }
+
+/* complete prefetches, invalidate entire dcache */
+#define CVMX_DCACHE_INVALIDATE \
+	{ CVMX_SYNC; asm volatile ("cache 9, 0($0)" : : ); }
+
+#define CVMX_CACHE(op, address, offset)					\
+	asm volatile ("cache " CVMX_TMP_STR(op) ", " CVMX_TMP_STR(offset) "(%[rbase])" \
+		: : [rbase] "d" (address) )
+/* fetch and lock the state. */
+#define CVMX_CACHE_LCKL2(address, offset) CVMX_CACHE(31, address, offset)
+/* unlock the state. */
+#define CVMX_CACHE_WBIL2(address, offset) CVMX_CACHE(23, address, offset)
+/* invalidate the cache block and clear the USED bits for the block */
+#define CVMX_CACHE_WBIL2I(address, offset) CVMX_CACHE(3, address, offset)
+/* load virtual tag and data for the L2 cache block into L2C_TAD0_TAG register */
+#define CVMX_CACHE_LTGL2I(address, offset) CVMX_CACHE(7, address, offset)
+
+#define CVMX_POP(result, input) \
+	asm ("pop %[rd],%[rs]" : [rd] "=d" (result) : [rs] "d" (input))
+#define CVMX_DPOP(result, input) \
+	asm ("dpop %[rd],%[rs]" : [rd] "=d" (result) : [rs] "d" (input))
+
+/* some new cop0-like stuff */
+#define CVMX_RDHWR(result, regstr) \
+	asm volatile ("rdhwr %[rt],$" CVMX_TMP_STR(regstr) : [rt] "=d" (result))
+#define CVMX_RDHWRNV(result, regstr) \
+	asm ("rdhwr %[rt],$" CVMX_TMP_STR(regstr) : [rt] "=d" (result))
+#endif /* __CVMX_ASM_H__ */
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                /***********************license start***************
+ * Author: Cavium Networks
+ *
+ * Contact: support@caviumnetworks.com
+ * This file is part of the OCTEON SDK
+ *
+ * Copyright (c) 2003-2012 Cavium Networks
+ *
+ * This file is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License, Version 2, as
+ * published by the Free Software Foundation.
+ *
+ * This file is distributed in the hope that it will be useful, but
+ * AS-IS and WITHOUT ANY WARRANTY; without even the implied warranty
+ * of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE, TITLE, or
+ * NONINFRINGEMENT.  See the GNU General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this file; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+ * or visit http://www.gnu.org/licenses/.
+ *
+ * This file may also be available under a different license from Cavium.
+ * Contact Cavium Networks for more information
+ ***********************license end**************************************/
+
+#ifndef __CVMX_ASXX_DEFS_H__
+#define __CVMX_ASXX_DEFS_H__
+
+#define CVMX_ASXX_GMII_RX_CLK_SET(block_id) (CVMX_ADD_IO_SEG(0x00011800B0000180ull))
+#define CVMX_ASXX_GMII_RX_DAT_SET(block_id) (CVMX_ADD_IO_SEG(0x00011800B0000188ull))
+#define CVMX_ASXX_INT_EN(block_id) (CVMX_ADD_IO_SEG(0x00011800B0000018ull) + ((block_id) & 1) * 0x8000000ull)
+#define CVMX_ASXX_INT_REG(block_id) (CVMX_ADD_IO_SEG(0x00011800B0000010ull) + ((block_id) & 1) * 0x8000000ull)
+#define CVMX_ASXX_MII_RX_DAT_SET(block_id) (CVMX_ADD_IO_SEG(0x00011800B0000190ull))
+#define CVMX_ASXX_PRT_LOOP(block_id) (CVMX_ADD_IO_SEG(0x00011800B0000040ull) + ((block_id) & 1) * 0x8000000ull)
+#define CVMX_ASXX_RLD_BYPASS(block_id) (CVMX_ADD_IO_SEG(0x00011800B0000248ull) + ((block_id) & 1) * 0x8000000ull)
+#define CVMX_ASXX_RLD_BYPASS_SETTING(block_id) (CVMX_ADD_IO_SEG(0x00011800B0000250ull) + ((block_id) & 1) * 0x8000000ull)
+#define CVMX_ASXX_RLD_COMP(block_id) (CVMX_ADD_IO_SEG(0x00011800B0000220ull) + ((block_id) & 1) * 0x8000000ull)
+#define CVMX_ASXX_RLD_DATA_DRV(block_id) (CVMX_ADD_IO_SEG(0x00011800B0000218ull) + ((block_id) & 1) * 0x8000000ull)
+#define CVMX_ASXX_RLD_FCRAM_MODE(block_id) (CVMX_ADD_IO_SEG(0x00011800B0000210ull) + ((block_id) & 1) * 0x8000000ull)
+#define CVMX_ASXX_RLD_NCTL_STRONG(block_id) (CVMX_ADD_IO_SEG(0x00011800B0000230ull) + ((block_id) & 1) * 0x8000000ull)
+#define CVMX_ASXX_RLD_NCTL_WEAK(block_id) (CVMX_ADD_IO_SEG(0x00011800B0000240ull) + ((block_id) & 1) * 0x8000000ull)
+#define CVMX_ASXX_RLD_PCTL_STRONG(block_id) (CVMX_ADD_IO_SEG(0x00011800B0000228ull) + ((block_id) & 1) * 0x8000000ull)
+#define CVMX_ASXX_RLD_PCTL_WEAK(block_id) (CVMX_ADD_IO_SEG(0x00011800B0000238ull) + ((block_id) & 1) * 0x8000000ull)
+#define CVMX_ASXX_RLD_SETTING(block_id) (CVMX_ADD_IO_SEG(0x00011800B0000258ull) + ((block_id) & 1) * 0x8000000ull)
+#define CVMX_ASXX_RX_CLK_SETX(offset, block_id) (CVMX_ADD_IO_SEG(0x00011800B0000020ull) + (((offset) & 3) + ((block_id) & 1) * 0x1000000ull) * 8)
+#define CVMX_ASXX_RX_PRT_EN(block_id) (CVMX_ADD_IO_SEG(0x00011800B0000000ull) + ((block_id) & 1) * 0x8000000ull)
+#define CVMX_ASXX_RX_WOL(block_id) (CVMX_ADD_IO_SEG(0x00011800B0000100ull) + ((block_id) & 1) * 0x8000000ull)
+#define CVMX_ASXX_RX_WOL_MSK(block_id) (CVMX_ADD_IO_SEG(0x00011800B0000108ull) + ((block_id) & 1) * 0x8000000ull)
+#define CVMX_ASXX_RX_WOL_POWOK(block_id) (CVMX_ADD_IO_SEG(0x00011800B0000118ull) + ((block_id) & 1) * 0x8000000ull)
+#define CVMX_ASXX_RX_WOL_SIG(block_id) (CVMX_ADD_IO_SEG(0x00011800B0000110ull) + ((block_id) & 1) * 0x8000000ull)
+#define CVMX_ASXX_TX_CLK_SETX(offset, block_id) (CVMX_ADD_IO_SEG(0x00011800B0000048ull) + (((offset) & 3) + ((block_id) & 1) * 0x1000000ull) * 8)
+#define CVMX_ASXX_TX_COMP_BYP(block_id) (CVMX_ADD_IO_SEG(0x00011800B0000068ull) + ((block_id) & 1) * 0x8000000ull)
+#define CVMX_ASXX_TX_HI_WATERX(offset, block_id) (CVMX_ADD_IO_SEG(0x00011800B0000080ull) + (((offset) & 3) + ((block_id) & 1) * 0x1000000ull) * 8)
+#define CVMX_ASXX_TX_PRT_EN(block_id) (CVMX_ADD_IO_SEG(0x00011800B0000008ull) + ((block_id) & 1) * 0x8000000ull)
+
+union cvmx_asxx_gmii_rx_clk_set {
+	uint64_t u64;
+	struct cvmx_asxx_gmii_rx_clk_set_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_5_63:59;
+		uint64_t setting:5;
+#else
+		uint64_t setting:5;
+		uint64_t reserved_5_63:59;
+#endif
+	} s;
+	struct cvmx_asxx_gmii_rx_clk_set_s cn30xx;
+	struct cvmx_asxx_gmii_rx_clk_set_s cn31xx;
+	struct cvmx_asxx_gmii_rx_clk_set_s cn50xx;
+};
+
+union cvmx_asxx_gmii_rx_dat_set {
+	uint64_t u64;
+	struct cvmx_asxx_gmii_rx_dat_set_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_5_63:59;
+		uint64_t setting:5;
+#else
+		uint64_t setting:5;
+		uint64_t reserved_5_63:59;
+#endif
+	} s;
+	struct cvmx_asxx_gmii_rx_dat_set_s cn30xx;
+	struct cvmx_asxx_gmii_rx_dat_set_s cn31xx;
+	struct cvmx_asxx_gmii_rx_dat_set_s cn50xx;
+};
+
+union cvmx_asxx_int_en {
+	uint64_t u64;
+	struct cvmx_asxx_int_en_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_12_63:52;
+		uint64_t txpsh:4;
+		uint64_t txpop:4;
+		uint64_t ovrflw:4;
+#else
+		uint64_t ovrflw:4;
+		uint64_t txpop:4;
+		uint64_t txpsh:4;
+		uint64_t reserved_12_63:52;
+#endif
+	} s;
+	struct cvmx_asxx_int_en_cn30xx {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_11_63:53;
+		uint64_t txpsh:3;
+		uint64_t reserved_7_7:1;
+		uint64_t txpop:3;
+		uint64_t reserved_3_3:1;
+		uint64_t ovrflw:3;
+#else
+		uint64_t ovrflw:3;
+		uint64_t reserved_3_3:1;
+		uint64_t txpop:3;
+		uint64_t reserved_7_7:1;
+		uint64_t txpsh:3;
+		uint64_t reserved_11_63:53;
+#endif
+	} cn30xx;
+	struct cvmx_asxx_int_en_cn30xx cn31xx;
+	struct cvmx_asxx_int_en_s cn38xx;
+	struct cvmx_asxx_int_en_s cn38xxp2;
+	struct cvmx_asxx_int_en_cn30xx cn50xx;
+	struct cvmx_asxx_int_en_s cn58xx;
+	struct cvmx_asxx_int_en_s cn58xxp1;
+};
+
+union cvmx_asxx_int_reg {
+	uint64_t u64;
+	struct cvmx_asxx_int_reg_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_12_63:52;
+		uint64_t txpsh:4;
+		uint64_t txpop:4;
+		uint64_t ovrflw:4;
+#else
+		uint64_t ovrflw:4;
+		uint64_t txpop:4;
+		uint64_t txpsh:4;
+		uint64_t reserved_12_63:52;
+#endif
+	} s;
+	struct cvmx_asxx_int_reg_cn30xx {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_11_63:53;
+		uint64_t txpsh:3;
+		uint64_t reserved_7_7:1;
+		uint64_t txpop:3;
+		uint64_t reserved_3_3:1;
+		uint64_t ovrflw:3;
+#else
+		uint64_t ovrflw:3;
+		uint64_t reserved_3_3:1;
+		uint64_t txpop:3;
+		uint64_t reserved_7_7:1;
+		uint64_t txpsh:3;
+		uint64_t reserved_11_63:53;
+#endif
+	} cn30xx;
+	struct cvmx_asxx_int_reg_cn30xx cn31xx;
+	struct cvmx_asxx_int_reg_s cn38xx;
+	struct cvmx_asxx_int_reg_s cn38xxp2;
+	struct cvmx_asxx_int_reg_cn30xx cn50xx;
+	struct cvmx_asxx_int_reg_s cn58xx;
+	struct cvmx_asxx_int_reg_s cn58xxp1;
+};
+
+union cvmx_asxx_mii_rx_dat_set {
+	uint64_t u64;
+	struct cvmx_asxx_mii_rx_dat_set_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_5_63:59;
+		uint64_t setting:5;
+#else
+		uint64_t setting:5;
+		uint64_t reserved_5_63:59;
+#endif
+	} s;
+	struct cvmx_asxx_mii_rx_dat_set_s cn30xx;
+	struct cvmx_asxx_mii_rx_dat_set_s cn50xx;
+};
+
+union cvmx_asxx_prt_loop {
+	uint64_t u64;
+	struct cvmx_asxx_prt_loop_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_8_63:56;
+		uint64_t ext_loop:4;
+		uint64_t int_loop:4;
+#else
+		uint64_t int_loop:4;
+		uint64_t ext_loop:4;
+		uint64_t reserved_8_63:56;
+#endif
+	} s;
+	struct cvmx_asxx_prt_loop_cn30xx {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_7_63:57;
+		uint64_t ext_loop:3;
+		uint64_t reserved_3_3:1;
+		uint64_t int_loop:3;
+#else
+		uint64_t int_loop:3;
+		uint64_t reserved_3_3:1;
+		uint64_t ext_loop:3;
+		uint64_t reserved_7_63:57;
+#endif
+	} cn30xx;
+	struct cvmx_asxx_prt_loop_cn30xx cn31xx;
+	struct cvmx_asxx_prt_loop_s cn38xx;
+	struct cvmx_asxx_prt_loop_s cn38xxp2;
+	struct cvmx_asxx_prt_loop_cn30xx cn50xx;
+	struct cvmx_asxx_prt_loop_s cn58xx;
+	struct cvmx_asxx_prt_loop_s cn58xxp1;
+};
+
+union cvmx_asxx_rld_bypass {
+	uint64_t u64;
+	struct cvmx_asxx_rld_bypass_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_1_63:63;
+		uint64_t bypass:1;
+#else
+		uint64_t bypass:1;
+		uint64_t reserved_1_63:63;
+#endif
+	} s;
+	struct cvmx_asxx_rld_bypass_s cn38xx;
+	struct cvmx_asxx_rld_bypass_s cn38xxp2;
+	struct cvmx_asxx_rld_bypass_s cn58xx;
+	struct cvmx_asxx_rld_bypass_s cn58xxp1;
+};
+
+union cvmx_asxx_rld_bypass_setting {
+	uint64_t u64;
+	struct cvmx_asxx_rld_bypass_setting_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_5_63:59;
+		uint64_t setting:5;
+#else
+		uint64_t setting:5;
+		uint64_t reserved_5_63:59;
+#endif
+	} s;
+	struct cvmx_asxx_rld_bypass_setting_s cn38xx;
+	struct cvmx_asxx_rld_bypass_setting_s cn38xxp2;
+	struct cvmx_asxx_rld_bypass_setting_s cn58xx;
+	struct cvmx_asxx_rld_bypass_setting_s cn58xxp1;
+};
+
+union cvmx_asxx_rld_comp {
+	uint64_t u64;
+	struct cvmx_asxx_rld_comp_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_9_63:55;
+		uint64_t pctl:5;
+		uint64_t nctl:4;
+#else
+		uint64_t nctl:4;
+		uint64_t pctl:5;
+		uint64_t reserved_9_63:55;
+#endif
+	} s;
+	struct cvmx_asxx_rld_comp_cn38xx {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_8_63:56;
+		uint64_t pctl:4;
+		uint64_t nctl:4;
+#else
+		uint64_t nctl:4;
+		uint64_t pctl:4;
+		uint64_t reserved_8_63:56;
+#endif
+	} cn38xx;
+	struct cvmx_asxx_rld_comp_cn38xx cn38xxp2;
+	struct cvmx_asxx_rld_comp_s cn58xx;
+	struct cvmx_asxx_rld_comp_s cn58xxp1;
+};
+
+union cvmx_asxx_rld_data_drv {
+	uint64_t u64;
+	struct cvmx_asxx_rld_data_drv_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_8_63:56;
+		uint64_t pctl:4;
+		uint64_t nctl:4;
+#else
+		uint64_t nctl:4;
+		uint64_t pctl:4;
+		uint64_t reserved_8_63:56;
+#endif
+	} s;
+	struct cvmx_asxx_rld_data_drv_s cn38xx;
+	struct cvmx_asxx_rld_data_drv_s cn38xxp2;
+	struct cvmx_asxx_rld_data_drv_s cn58xx;
+	struct cvmx_asxx_rld_data_drv_s cn58xxp1;
+};
+
+union cvmx_asxx_rld_fcram_mode {
+	uint64_t u64;
+	struct cvmx_asxx_rld_fcram_mode_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_1_63:63;
+		uint64_t mode:1;
+#else
+		uint64_t mode:1;
+		uint64_t reserved_1_63:63;
+#endif
+	} s;
+	struct cvmx_asxx_rld_fcram_mode_s cn38xx;
+	struct cvmx_asxx_rld_fcram_mode_s cn38xxp2;
+};
+
+union cvmx_asxx_rld_nctl_strong {
+	uint64_t u64;
+	struct cvmx_asxx_rld_nctl_strong_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_5_63:59;
+		uint64_t nctl:5;
+#else
+		uint64_t nctl:5;
+		uint64_t reserved_5_63:59;
+#endif
+	} s;
+	struct cvmx_asxx_rld_nctl_strong_s cn38xx;
+	struct cvmx_asxx_rld_nctl_strong_s cn38xxp2;
+	struct cvmx_asxx_rld_nctl_strong_s cn58xx;
+	struct cvmx_asxx_rld_nctl_strong_s cn58xxp1;
+};
+
+union cvmx_asxx_rld_nctl_weak {
+	uint64_t u64;
+	struct cvmx_asxx_rld_nctl_weak_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_5_63:59;
+		uint64_t nctl:5;
+#else
+		uint64_t nctl:5;
+		uint64_t reserved_5_63:59;
+#endif
+	} s;
+	struct cvmx_asxx_rld_nctl_weak_s cn38xx;
+	struct cvmx_asxx_rld_nctl_weak_s cn38xxp2;
+	struct cvmx_asxx_rld_nctl_weak_s cn58xx;
+	struct cvmx_asxx_rld_nctl_weak_s cn58xxp1;
+};
+
+union cvmx_asxx_rld_pctl_strong {
+	uint64_t u64;
+	struct cvmx_asxx_rld_pctl_strong_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_5_63:59;
+		uint64_t pctl:5;
+#else
+		uint64_t pctl:5;
+		uint64_t reserved_5_63:59;
+#endif
+	} s;
+	struct cvmx_asxx_rld_pctl_strong_s cn38xx;
+	struct cvmx_asxx_rld_pctl_strong_s cn38xxp2;
+	struct cvmx_asxx_rld_pctl_strong_s cn58xx;
+	struct cvmx_asxx_rld_pctl_strong_s cn58xxp1;
+};
+
+union cvmx_asxx_rld_pctl_weak {
+	uint64_t u64;
+	struct cvmx_asxx_rld_pctl_weak_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_5_63:59;
+		uint64_t pctl:5;
+#else
+		uint64_t pctl:5;
+		uint64_t reserved_5_63:59;
+#endif
+	} s;
+	struct cvmx_asxx_rld_pctl_weak_s cn38xx;
+	struct cvmx_asxx_rld_pctl_weak_s cn38xxp2;
+	struct cvmx_asxx_rld_pctl_weak_s cn58xx;
+	struct cvmx_asxx_rld_pctl_weak_s cn58xxp1;
+};
+
+union cvmx_asxx_rld_setting {
+	uint64_t u64;
+	struct cvmx_asxx_rld_setting_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_13_63:51;
+		uint64_t dfaset:5;
+		uint64_t dfalag:1;
+		uint64_t dfalead:1;
+		uint64_t dfalock:1;
+		uint64_t setting:5;
+#else
+		uint64_t setting:5;
+		uint64_t dfalock:1;
+		uint64_t dfalead:1;
+		uint64_t dfalag:1;
+		uint64_t dfaset:5;
+		uint64_t reserved_13_63:51;
+#endif
+	} s;
+	struct cvmx_asxx_rld_setting_cn38xx {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_5_63:59;
+		uint64_t setting:5;
+#else
+		uint64_t setting:5;
+		uint64_t reserved_5_63:59;
+#endif
+	} cn38xx;
+	struct cvmx_asxx_rld_setting_cn38xx cn38xxp2;
+	struct cvmx_asxx_rld_setting_s cn58xx;
+	struct cvmx_asxx_rld_setting_s cn58xxp1;
+};
+
+union cvmx_asxx_rx_clk_setx {
+	uint64_t u64;
+	struct cvmx_asxx_rx_clk_setx_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_5_63:59;
+		uint64_t setting:5;
+#else
+		uint64_t setting:5;
+		uint64_t reserved_5_63:59;
+#endif
+	} s;
+	struct cvmx_asxx_rx_clk_setx_s cn30xx;
+	struct cvmx_asxx_rx_clk_setx_s cn31xx;
+	struct cvmx_asxx_rx_clk_setx_s cn38xx;
+	struct cvmx_asxx_rx_clk_setx_s cn38xxp2;
+	struct cvmx_asxx_rx_clk_setx_s cn50xx;
+	struct cvmx_asxx_rx_clk_setx_s cn58xx;
+	struct cvmx_asxx_rx_clk_setx_s cn58xxp1;
+};
+
+union cvmx_asxx_rx_prt_en {
+	uint64_t u64;
+	struct cvmx_asxx_rx_prt_en_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_4_63:60;
+		uint64_t prt_en:4;
+#else
+		uint64_t prt_en:4;
+		uint64_t reserved_4_63:60;
+#endif
+	} s;
+	struct cvmx_asxx_rx_prt_en_cn30xx {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_3_63:61;
+		uint64_t prt_en:3;
+#else
+		uint64_t prt_en:3;
+		uint64_t reserved_3_63:61;
+#endif
+	} cn30xx;
+	struct cvmx_asxx_rx_prt_en_cn30xx cn31xx;
+	struct cvmx_asxx_rx_prt_en_s cn38xx;
+	struct cvmx_asxx_rx_prt_en_s cn38xxp2;
+	struct cvmx_asxx_rx_prt_en_cn30xx cn50xx;
+	struct cvmx_asxx_rx_prt_en_s cn58xx;
+	struct cvmx_asxx_rx_prt_en_s cn58xxp1;
+};
+
+union cvmx_asxx_rx_wol {
+	uint64_t u64;
+	struct cvmx_asxx_rx_wol_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_2_63:62;
+		uint64_t status:1;
+		uint64_t enable:1;
+#else
+		uint64_t enable:1;
+		uint64_t status:1;
+		uint64_t reserved_2_63:62;
+#endif
+	} s;
+	struct cvmx_asxx_rx_wol_s cn38xx;
+	struct cvmx_asxx_rx_wol_s cn38xxp2;
+};
+
+union cvmx_asxx_rx_wol_msk {
+	uint64_t u64;
+	struct cvmx_asxx_rx_wol_msk_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t msk:64;
+#else
+		uint64_t msk:64;
+#endif
+	} s;
+	struct cvmx_asxx_rx_wol_msk_s cn38xx;
+	struct cvmx_asxx_rx_wol_msk_s cn38xxp2;
+};
+
+union cvmx_asxx_rx_wol_powok {
+	uint64_t u64;
+	struct cvmx_asxx_rx_wol_powok_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_1_63:63;
+		uint64_t powerok:1;
+#else
+		uint64_t powerok:1;
+		uint64_t reserved_1_63:63;
+#endif
+	} s;
+	struct cvmx_asxx_rx_wol_powok_s cn38xx;
+	struct cvmx_asxx_rx_wol_powok_s cn38xxp2;
+};
+
+union cvmx_asxx_rx_wol_sig {
+	uint64_t u64;
+	struct cvmx_asxx_rx_wol_sig_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_32_63:32;
+		uint64_t sig:32;
+#else
+		uint64_t sig:32;
+		uint64_t reserved_32_63:32;
+#endif
+	} s;
+	struct cvmx_asxx_rx_wol_sig_s cn38xx;
+	struct cvmx_asxx_rx_wol_sig_s cn38xxp2;
+};
+
+union cvmx_asxx_tx_clk_setx {
+	uint64_t u64;
+	struct cvmx_asxx_tx_clk_setx_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_5_63:59;
+		uint64_t setting:5;
+#else
+		uint64_t setting:5;
+		uint64_t reserved_5_63:59;
+#endif
+	} s;
+	struct cvmx_asxx_tx_clk_setx_s cn30xx;
+	struct cvmx_asxx_tx_clk_setx_s cn31xx;
+	struct cvmx_asxx_tx_clk_setx_s cn38xx;
+	struct cvmx_asxx_tx_clk_setx_s cn38xxp2;
+	struct cvmx_asxx_tx_clk_setx_s cn50xx;
+	struct cvmx_asxx_tx_clk_setx_s cn58xx;
+	struct cvmx_asxx_tx_clk_setx_s cn58xxp1;
+};
+
+union cvmx_asxx_tx_comp_byp {
+	uint64_t u64;
+	struct cvmx_asxx_tx_comp_byp_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_0_63:64;
+#else
+		uint64_t reserved_0_63:64;
+#endif
+	} s;
+	struct cvmx_asxx_tx_comp_byp_cn30xx {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_9_63:55;
+		uint64_t bypass:1;
+		uint64_t pctl:4;
+		uint64_t nctl:4;
+#else
+		uint64_t nctl:4;
+		uint64_t pctl:4;
+		uint64_t bypass:1;
+		uint64_t reserved_9_63:55;
+#endif
+	} cn30xx;
+	struct cvmx_asxx_tx_comp_byp_cn30xx cn31xx;
+	struct cvmx_asxx_tx_comp_byp_cn38xx {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_8_63:56;
+		uint64_t pctl:4;
+		uint64_t nctl:4;
+#else
+		uint64_t nctl:4;
+		uint64_t pctl:4;
+		uint64_t reserved_8_63:56;
+#endif
+	} cn38xx;
+	struct cvmx_asxx_tx_comp_byp_cn38xx cn38xxp2;
+	struct cvmx_asxx_tx_comp_byp_cn50xx {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_17_63:47;
+		uint64_t bypass:1;
+		uint64_t reserved_13_15:3;
+		uint64_t pctl:5;
+		uint64_t reserved_5_7:3;
+		uint64_t nctl:5;
+#else
+		uint64_t nctl:5;
+		uint64_t reserved_5_7:3;
+		uint64_t pctl:5;
+		uint64_t reserved_13_15:3;
+		uint64_t bypass:1;
+		uint64_t reserved_17_63:47;
+#endif
+	} cn50xx;
+	struct cvmx_asxx_tx_comp_byp_cn58xx {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_13_63:51;
+		uint64_t pctl:5;
+		uint64_t reserved_5_7:3;
+		uint64_t nctl:5;
+#else
+		uint64_t nctl:5;
+		uint64_t reserved_5_7:3;
+		uint64_t pctl:5;
+		uint64_t reserved_13_63:51;
+#endif
+	} cn58xx;
+	struct cvmx_asxx_tx_comp_byp_cn58xx cn58xxp1;
+};
+
+union cvmx_asxx_tx_hi_waterx {
+	uint64_t u64;
+	struct cvmx_asxx_tx_hi_waterx_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_4_63:60;
+		uint64_t mark:4;
+#else
+		uint64_t mark:4;
+		uint64_t reserved_4_63:60;
+#endif
+	} s;
+	struct cvmx_asxx_tx_hi_waterx_cn30xx {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_3_63:61;
+		uint64_t mark:3;
+#else
+		uint64_t mark:3;
+		uint64_t reserved_3_63:61;
+#endif
+	} cn30xx;
+	struct cvmx_asxx_tx_hi_waterx_cn30xx cn31xx;
+	struct cvmx_asxx_tx_hi_waterx_s cn38xx;
+	struct cvmx_asxx_tx_hi_waterx_s cn38xxp2;
+	struct cvmx_asxx_tx_hi_waterx_cn30xx cn50xx;
+	struct cvmx_asxx_tx_hi_waterx_s cn58xx;
+	struct cvmx_asxx_tx_hi_waterx_s cn58xxp1;
+};
+
+union cvmx_asxx_tx_prt_en {
+	uint64_t u64;
+	struct cvmx_asxx_tx_prt_en_s {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_4_63:60;
+		uint64_t prt_en:4;
+#else
+		uint64_t prt_en:4;
+		uint64_t reserved_4_63:60;
+#endif
+	} s;
+	struct cvmx_asxx_tx_prt_en_cn30xx {
+#ifdef __BIG_ENDIAN_BITFIELD
+		uint64_t reserved_3_63:61;
+		uint64_t prt_en:3;
+#else
+		uint64_t prt_en:3;
+		uint64_t reserved_3_63:61;
+#endif
+	} cn30xx;
+	struct cvmx_asxx_tx_prt_en_cn30xx cn31xx;
+	struct cvmx_asxx_tx_prt_en_s cn38xx;
+	struct cvmx_asxx_tx_prt_en_s cn38xxp2;
+	struct cvmx_asxx_tx_prt_en_cn30xx cn50xx;
+	struct cvmx_asxx_tx_prt_en_s cn58xx;
+	struct cvmx_asxx_tx_prt_en_s cn58xxp1;
+};
+
+#endif
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  /***********************license start***************
+ * Author: Cavium Networks
+ *
+ * Contact: support@caviumnetworks.com
+ * This file is part of the OCTEON SDK
+ *
+ * Copyright (c) 2003-2008 Cavium Networks
+ *
+ * This file is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License, Version 2, as
+ * published by the Free Software Foundation.
+ *
+ * This file is distributed in the hope that it will be useful, but
+ * AS-IS and WITHOUT ANY WARRANTY; without even the implied warranty
+ * of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE, TITLE, or
+ * NONINFRINGEMENT.  See the GNU General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this file; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+ * or visit http://www.gnu.org/licenses/.
+ *
+ * This file may also be available under a different license from Cavium.
+ * Contact Cavium Networks for more information
+ ***********************license end**************************************/
+
+/*
+ * Header file containing the ABI with the bootloader.
+ */
+
+#ifndef __CVMX_BOOTINFO_H__
+#define __CVMX_BOOTINFO_H__
+
+/*
+ * Current major and minor versions of the CVMX bootinfo block that is
+ * passed from the bootloader to the application.  This is versioned
+ * so that applications can properly handle multiple bootloader
+ * versions.
+ */
+#define CVMX_BOOTINFO_MAJ_VER 1
+#define CVMX_BOOTINFO_MIN_VER 3
+
+#if (CVMX_BOOTINFO_MAJ_VER == 1)
+#define CVMX_BOOTINFO_OCTEON_SERIAL_LEN 20
+/*
+ * This structure is populated by the bootloader.  For binary
+ * compatibility the only changes that should be made are
+ * adding members to the end of the structure, and the minor
+ * version should be incremented at that time.
+ * If an incompatible change is made, the major version
+ * must be incremented, and the minor version should be reset
+ * to 0.
+ */
+struct cvmx_bootinfo {
+	uint32_t major_version;
+	uint32_t minor_version;
+
+	uint64_t stack_top;
+	uint64_t heap_base;
+	uint64_t heap_end;
+	uint64_t desc_vaddr;
+
+	uint32_t exception_base_addr;
+	uint32_t stack_size;
+	uint32_t flags;
+	uint32_t core_mask;
+	/* DRAM size in megabytes */
+	uint32_t dram_size;
+	/* physical address of free memory descriptor block*/
+	uint32_t phy_mem_desc_addr;
+	/* used to pass flags from app to debugger */
+	uint32_t debugger_flags_base_addr;
+
+	/* CPU clock speed, in hz */
+	uint32_t eclock_hz;
+
+	/* DRAM clock speed, in hz */
+	uint32_t dclock_hz;
+
+	uint32_t reserved0;
+	uint16_t board_type;
+	uint8_t board_rev_major;
+	uint8_t board_rev_minor;
+	uint16_t reserved1;
+	uint8_t reserved2;
+	uint8_t reserved3;
+	char board_serial_number[CVMX_BOOTINFO_OCTEON_SERIAL_LEN];
+	uint8_t mac_addr_base[6];
+	uint8_t mac_addr_count;
+#if (CVMX_BOOTINFO_MIN_VER >= 1)
+	/*
+	 * Several boards support compact flash on the Octeon boot
+	 * bus.	 The CF memory spaces may be mapped to different
+	 * addresses on different boards.  These are the physical
+	 * addresses, so care must be taken to use the correct
+	 * XKPHYS/KSEG0 addressing depending on the application's
+	 * ABI.	 These values will be 0 if CF is not present.
+	 */
+	uint64_t compact_flash_common_base_addr;
+	uint64_t compact_flash_attribute_base_addr;
+	/*
+	 * Base address of the LED display (as on EBT3000 board)
+	 * This will be 0 if LED display not present.
+	 */
+	uint64_t led_display_base_addr;
+#endif
+#if (CVMX_BOOTINFO_MIN_VER >= 2)
+	/* DFA reference clock in hz (if applicable)*/
+	uint32_t dfa_ref_clock_hz;
+
+	/*
+	 * flags indicating various configuration options.  These
+	 * flags supercede the 'flags' variable and should be used
+	 * instead if available.
+	 */
+	uint32_t config_flags;
+#endif
+#if (CVMX_BOOTINFO_MIN_VER >= 3)
+	/*
+	 * Address of the OF Flattened Device Tree structure
+	 * describing the board.
+	 */
+	uint64_t fdt_addr;
+#endif
+};
+
+#define CVMX_BOOTINFO_CFG_FLAG_PCI_HOST			(1ull << 0)
+#define CVMX_BOOTINFO_CFG_FLAG_PCI_TARGET		(1ull << 1)
+#define CVMX_BOOTINFO_CFG_FLAG_DEBUG			(1ull << 2)
+#define CVMX_BOOTINFO_CFG_FLAG_NO_MA

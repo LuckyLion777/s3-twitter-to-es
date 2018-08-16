@@ -1,0 +1,14 @@
+After installing it as TRIAL don't start it, if you have, close it.
+
+DO THIS:
+
+Goto C:\Windows\System32\drivers\etc
+Right click the "hosts" file, edit it with notepad
+
+And add this in the bottom:
+
+127.0.0.1 activate.adobe.com
+
+then save the hosts file.
+
+Now open the app and type any serial

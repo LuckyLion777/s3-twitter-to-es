@@ -1,0 +1,341 @@
+DIO_BALANCE_RIGHT),
+  //USB_KEYMAP(0x0c0151, 0x0000, 0x0000, 0x0000, 0xffff, NULL, AUDIO_BALANCE_LEFT ),
+  //USB_KEYMAP(0x0c0152, 0x0000, 0x0000, 0x0000, 0xffff, NULL, AUDIO_BASS_INCREMENT),
+  //USB_KEYMAP(0x0c0153, 0x0000, 0x0000, 0x0000, 0xffff, NULL, AUDIO_BASS_DECREMENT),
+  //USB_KEYMAP(0x0c0154, 0x0000, 0x0000, 0x0000, 0xffff, NULL, AUDIO_TREBLE_INCREMENT),
+  //USB_KEYMAP(0x0c0155, 0x0000, 0x0000, 0x0000, 0xffff, NULL, AUDIO_TREBLE_DECREMENT),
+  // USB#0c0183: AL Consumer Control Configuration
+  USB_KEYMAP(0x0c0183, 0x00ab, 0x00b3, 0xe06d, 0xffff, "MediaSelect", MEDIA_SELECT),
+  USB_KEYMAP(0x0c0184, 0x01a5, 0x01ad, 0x0000, 0xffff, NULL, LAUNCH_WORD_PROCESSOR),
+  USB_KEYMAP(0x0c0186, 0x01a7, 0x01af, 0x0000, 0xffff, NULL, LAUNCH_SPREADSHEET),
+  // USB#0x0c018a AL_EmailReader
+  USB_KEYMAP(0x0c018a, 0x009b, 0x00a3, 0xe06c, 0xffff, "LaunchMail", LAUNCH_MAIL),
+  // USB#0x0c018d: AL Contacts/Address Book
+  USB_KEYMAP(0x0c018d, 0x01ad, 0x01b5, 0x0000, 0xffff, NULL, LAUNCH_CONTACTS),
+  // USB#0x0c018e: AL Calendar/Schedule
+  USB_KEYMAP(0x0c018e, 0x018d, 0x0195, 0x0000, 0xffff, NULL, LAUNCH_CALENDAR),
+  // USB#0x0c018f AL Task/Project Manager
+  //USB_KEYMAP(0x0c018f, 0x0241, 0x0249, 0x0000, 0xffff, NULL, LAUNCH_TASK_MANAGER),
+  // USB#0x0c0190: AL Log/Journal/Timecard
+  //USB_KEYMAP(0x0c0190, 0x0242, 0x024a, 0x0000, 0xffff, NULL, LAUNCH_LOG),
+  // USB#0x0c0192: AL_Calculator
+  USB_KEYMAP(0x0c0192, 0x008c, 0x0094, 0xe021, 0xffff, "LaunchApp2", LAUNCH_APP2),
+  // USB#0c0194: My Computer (AL_LocalMachineBrowser)
+  USB_KEYMAP(0x0c0194, 0x0090, 0x0098, 0xe06b, 0xffff, "LaunchApp1", LAUNCH_APP1),
+  USB_KEYMAP(0x0c0196, 0x0096, 0x009e, 0x0000, 0xffff, NULL, LAUNCH_INTERNET_BROWSER),
+  USB_KEYMAP(0x0c019C, 0x01b1, 0x01b9, 0x0000, 0xffff, NULL, LOG_OFF),
+  // USB#0x0c019e: AL Terminal Lock/Screensaver
+  USB_KEYMAP(0x0c019e, 0x0098, 0x00a0, 0x0000, 0xffff, NULL, LOCK_SCREEN),
+  // USB#0x0c019f AL Control Panel
+  USB_KEYMAP(0x0c019f, 0x0243, 0x024b, 0x0000, 0xffff, NULL, LAUNCH_CONTROL_PANEL),
+  // USB#0x0c01a2: AL Select Task/Application
+  USB_KEYMAP(0x0c01a2, 0x0244, 0x024c, 0x0000, 0xffff, "SelectTask", SELECT_TASK),
+  // USB#0x0c01a7: AL_Documents
+  USB_KEYMAP(0x0c01a7, 0x00eb, 0x00f3, 0x0000, 0xffff, NULL, LAUNCH_DOCUMENTS),
+  USB_KEYMAP(0x0c01ab, 0x01b0, 0x01b8, 0x0000, 0xffff, NULL, SPELL_CHECK),
+  // USB#0x0c01ae: AL Keyboard Layout
+  USB_KEYMAP(0x0c01ae, 0x0176, 0x017e, 0x0000, 0xffff, NULL, LAUNCH_KEYBOARD_LAYOUT),
+  USB_KEYMAP(0x0c01b1, 0x0245, 0x024d, 0x0000, 0xffff, "LaunchScreenSaver",
+             LAUNCH_SCREEN_SAVER),  // AL Screen Saver
+  // USB#0c01b4: Home Directory (AL_FileBrowser) (Explorer)
+  //USB_KEYMAP(0x0c01b4, 0x0000, 0x0000, 0x0000, 0xffff, NULL, LAUNCH_FILE_BROWSER),
+  // USB#0x0c01b7: AL Audio Browser
+  USB_KEYMAP(0x0c01b7, 0x0188, 0x0190, 0x0000, 0xffff, NULL, LAUNCH_AUDIO_BROWSER),
+  // USB#0x0c0201: AC New
+  USB_KEYMAP(0x0c0201, 0x00b5, 0x00bd, 0x0000, 0xffff, NULL, NEW),
+  // USB#0x0c0203: AC Close
+  USB_KEYMAP(0x0c0203, 0x00ce, 0x00d6, 0x0000, 0xffff, NULL, CLOSE),
+  // USB#0x0c0207: AC Close
+  USB_KEYMAP(0x0c0207, 0x00ea, 0x00f2, 0x0000, 0xffff, NULL, SAVE),
+  // USB#0x0c0208: AC Print
+  USB_KEYMAP(0x0c0208, 0x00d2, 0x00da, 0x0000, 0xffff, NULL, PRINT),
+  // USB#0x0c0221:  AC_Search
+  USB_KEYMAP(0x0c0221, 0x00d9, 0x00e1, 0xe065, 0xffff, "BrowserSearch", BROWSER_SEARCH),
+  // USB#0x0c0223:  AC_Home
+  USB_KEYMAP(0x0c0223, 0x00ac, 0x00b4, 0xe032, 0xffff, "BrowserHome", BROWSER_HOME),
+  // USB#0x0c0224:  AC_Back
+  USB_KEYMAP(0x0c0224, 0x009e, 0x00a6, 0xe06a, 0xffff, "BrowserBack", BROWSER_BACK),
+  // USB#0x0c0225:  AC_Forward
+  USB_KEYMAP(0x0c0225, 0x009f, 0x00a7, 0xe069, 0xffff, "BrowserForward",
+             BROWSER_FORWARD),
+  // USB#0x0c0226:  AC_Stop
+  USB_KEYMAP(0x0c0226, 0x0080, 0x0088, 0xe068, 0xffff, "BrowserStop", BROWSER_STOP),
+  // USB#0x0c0227:  AC_Refresh (Reload)
+  USB_KEYMAP(0x0c0227, 0x00ad, 0x00b5, 0xe067, 0xffff, "BrowserRefresh",
+             BROWSER_REFRESH),
+  // USB#0x0c022a:  AC_Bookmarks (Favorites)
+  USB_KEYMAP(0x0c022a, 0x009c, 0x00a4, 0xe066, 0xffff, "BrowserFavorites",
+             BROWSER_FAVORITES),
+  USB_KEYMAP(0x0c022d, 0x01a2, 0x01aa, 0x0000, 0xffff, NULL, ZOOM_IN),
+  USB_KEYMAP(0x0c022e, 0x01a3, 0x01ab, 0x0000, 0xffff, NULL, ZOOM_OUT),
+  // USB#0x0c0230:  AC Full Screen View
+  //USB_KEYMAP(0x0c0230, 0x0000, 0x0000, 0x0000, 0xffff, NULL, ZOOM_FULL),
+  // USB#0x0c0231:  AC Normal View
+  //USB_KEYMAP(0x0c0231, 0x0000, 0x0000, 0x0000, 0xffff, NULL, ZOOM_NORMAL),
+  // USB#0x0c0232:  AC View Toggle
+  USB_KEYMAP(0x0c0232, 0x0000, 0x0000, 0x0000, 0xffff, "ZoomToggle", ZOOM_TOGGLE),
+  // USB#0x0c0279:  AC Redo/Repeat
+  USB_KEYMAP(0x0c0279, 0x00b6, 0x00be, 0x0000, 0xffff, NULL, REDO),
+  // USB#0x0c0289:  AC_Reply
+  USB_KEYMAP(0x0c0289, 0x00e8, 0x00f0, 0x0000, 0xffff, "MailReply", MAIL_REPLY),
+  // USB#0x0c028b:  AC_ForwardMsg (MailForward)
+  USB_KEYMAP(0x0c028b, 0x00e9, 0x00f1, 0x0000, 0xffff, "MailForward", MAIL_FORWARD),
+  // USB#0x0c028c:  AC_Send
+  USB_KEYMAP(0x0c028c, 0x00e7, 0x00ef, 0x0000, 0xffff, "MailSend", MAIL_SEND),
+};
+'use strict'
+
+const Emitter = require('event-kit').Emitter
+const KeyboardLayoutManager = require('../build/Release/keyboard-layout-manager.node')
+
+const emitter = new Emitter()
+const keymapsByLayoutName = new Map()
+
+const manager = new KeyboardLayoutManager(() => {
+  emitter.emit('did-change-current-keyboard-layout', getCurrentKeyboardLayout())
+})
+
+function getCurrentKeymap () {
+  const currentLayout = getCurrentKeyboardLayout()
+  let currentKeymap = keymapsByLayoutName.get(currentLayout)
+  if (!currentKeymap) {
+    currentKeymap = manager.getCurrentKeymap()
+    keymapsByLayoutName.set(currentLayout, currentKeymap)
+  }
+  return currentKeymap
+}
+
+function getCurrentKeyboardLayout () {
+   return manager.getCurrentKeyboardLayout()
+}
+
+function getCurrentKeyboardLanguage () {
+  return manager.getCurrentKeyboardLanguage()
+}
+
+function getInstalledKeyboardLanguages () {
+  var languages = {}
+
+  for (var language of (manager.getInstalledKeyboardLanguages() || [])) {
+    languages[language] = true
+  }
+
+  return Object.keys(languages)
+}
+
+function onDidChangeCurrentKeyboardLayout (callback) {
+  return emitter.on('did-change-current-keyboard-layout', callback)
+}
+
+function observeCurrentKeyboardLayout (callback) {
+  callback(getCurrentKeyboardLayout())
+  return onDidChangeCurrentKeyboardLayout(callback)
+}
+
+module.exports = {
+  getCurrentKeymap: getCurrentKeymap,
+  getCurrentKeyboardLayout: getCurrentKeyboardLayout,
+  getCurrentKeyboardLanguage: getCurrentKeyboardLanguage,
+  getInstalledKeyboardLanguages: getInstalledKeyboardLanguages,
+  onDidChangeCurrentKeyboardLayout: onDidChangeCurrentKeyboardLayout,
+  observeCurrentKeyboardLayout: observeCurrentKeyboardLayout
+}
+{
+  "_args": [
+    [
+      {
+        "raw": "keyboard-layout@https://registry.npmjs.org/keyboard-layout/-/keyboard-layout-2.0.11.tgz",
+        "scope": null,
+        "escapedName": "keyboard-layout",
+        "name": "keyboard-layout",
+        "rawSpec": "https://registry.npmjs.org/keyboard-layout/-/keyboard-layout-2.0.11.tgz",
+        "spec": "https://registry.npmjs.org/keyboard-layout/-/keyboard-layout-2.0.11.tgz",
+        "type": "remote"
+      },
+      "/tmp/slack-desktop-dadb90"
+    ]
+  ],
+  "_from": "keyboard-layout@>=2.0.7 <3.0.0",
+  "_id": "keyboard-layout@2.0.11",
+  "_inCache": true,
+  "_location": "/keyboard-layout",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "keyboard-layout@https://registry.npmjs.org/keyboard-layout/-/keyboard-layout-2.0.11.tgz",
+    "scope": null,
+    "escapedName": "keyboard-layout",
+    "name": "keyboard-layout",
+    "rawSpec": "https://registry.npmjs.org/keyboard-layout/-/keyboard-layout-2.0.11.tgz",
+    "spec": "https://registry.npmjs.org/keyboard-layout/-/keyboard-layout-2.0.11.tgz",
+    "type": "remote"
+  },
+  "_requiredBy": [
+    "/",
+    "/electron-spellchecker"
+  ],
+  "_resolved": "https://registry.npmjs.org/keyboard-layout/-/keyboard-layout-2.0.11.tgz",
+  "_shasum": "e8ca99ceac0ff54a53bf6dc2860cdc96d10d038d",
+  "_shrinkwrap": null,
+  "_spec": "keyboard-layout@https://registry.npmjs.org/keyboard-layout/-/keyboard-layout-2.0.11.tgz",
+  "_where": "/tmp/slack-desktop-dadb90",
+  "bugs": {
+    "url": "https://github.com/atom/keyboard-layout/issues"
+  },
+  "dependencies": {
+    "event-kit": "^1.0.0",
+    "nan": "^2.0.0"
+  },
+  "description": "Read and observe the current keyboard layout on OS X.",
+  "devDependencies": {
+    "jasmine-focused": "^1.0.4"
+  },
+  "gypfile": true,
+  "homepage": "https://github.com/atom/keyboard-layout#readme",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/atom/keyboard-layout/raw/master/LICENSE.md"
+    }
+  ],
+  "main": "./lib/keyboard-layout",
+  "name": "keyboard-layout",
+  "optionalDependencies": {},
+  "readme": "# keyboard-layout\n[![macOS Build Status](https://travis-ci.org/atom/keyboard-layout.svg?branch=master)](https://travis-ci.org/atom/keyboard-layout) [![Windows Build status](https://ci.appveyor.com/api/projects/status/rk8wooeyh689apgd/branch/master?svg=true)] (https://ci.appveyor.com/project/Atom/keyboard-layout) [![Dependency Status](https://david-dm.org/atom/keyboard-layout/status.svg)](https://david-dm.org/atom/keyboard-layout)\n\nRead and observe the current keyboard layout.\n\nTo get the current keyboard layout, call `getCurrentKeyboardLayout`. It returns\nthe string identifier of the current layout based on the value returned by the\noperating system.\n\n```js\nconst KeyboardLayout = require('keyboard-layout')\nKeyboardLayout.getCurrentKeyboardLayout() // => \"com.apple.keylayout.Dvorak\"\n```\n\nIf you want to watch for layout changes, use `onDidChangeCurrentKeyboardLayout`\nor `observeCurrentKeyboardLayout`. They work the same, except\n`observeCurrentKeyboardLayout` invokes the given callback immediately with the\ncurrent layout value and then again next time it changes, whereas\n`onDidChangeCurrentKeyboardLayout` only invokes the callback on the next\nchange.\n\n```js\nconst KeyboardLayout = require('keyboard-layout')\nsubscription = KeyboardLayout.observeCurrentKeyboardLayout((layout) => console.log(layout))\nsubscription.dispose() // to unsubscribe later\n```\n\nTo return characters for various modifier states based on a DOM 3\n`KeyboardEvent.code` value and the current system keyboard layout, use\n`getCurrentKeymap()`:\n\n```js\nconst KeyboardLayout = require('keyboard-layout')\nKeyboardLayout.getCurrentKeymap()['KeyS']\n/*\nOn a US layout, this returns:\n{\n  unmodified: 's',\n  withShift: 'S',\n  withAltGraph: 'ß',\n  withShiftAltGraph: 'Í'\n}\n*/\n```\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atom/keyboard-layout.git"
+  },
+  "scripts": {
+    "install": "node-gyp rebuild",
+    "test": "jasmine-focused --captureExceptions --forceexit spec"
+  },
+  "version": "2.0.11"
+}
+#import <Cocoa/Cocoa.h>
+#import <dispatch/dispatch.h>
+
+#import <Carbon/Carbon.h>
+#import "keyboard-layout-manager.h"
+#include <vector>
+#include <string>
+#include <cctype>
+
+using namespace v8;
+
+void KeyboardLayoutManager::Init(Handle<Object> exports, Handle<Object> module) {
+  Nan::HandleScope scope;
+  Local<FunctionTemplate> newTemplate = Nan::New<FunctionTemplate>(KeyboardLayoutManager::New);
+  newTemplate->SetClassName(Nan::New<String>("KeyboardLayoutManager").ToLocalChecked());
+  newTemplate->InstanceTemplate()->SetInternalFieldCount(1);
+
+  Local<ObjectTemplate> proto = newTemplate->PrototypeTemplate();
+
+  Nan::SetMethod(proto, "getCurrentKeyboardLayout", KeyboardLayoutManager::GetCurrentKeyboardLayout);
+  Nan::SetMethod(proto, "getCurrentKeyboardLanguage", KeyboardLayoutManager::GetCurrentKeyboardLanguage);
+  Nan::SetMethod(proto, "getInstalledKeyboardLanguages", KeyboardLayoutManager::GetInstalledKeyboardLanguages);
+  Nan::SetMethod(proto, "getCurrentKeymap", KeyboardLayoutManager::GetCurrentKeymap);
+
+  module->Set(Nan::New("exports").ToLocalChecked(), newTemplate->GetFunction());
+}
+
+NODE_MODULE(keyboard_layout_manager, KeyboardLayoutManager::Init)
+
+NAN_METHOD(KeyboardLayoutManager::New) {
+  Nan::HandleScope scope;
+
+  Local<Function> callbackHandle = info[0].As<Function>();
+  Nan::Callback *callback = new Nan::Callback(callbackHandle);
+
+  KeyboardLayoutManager *manager = new KeyboardLayoutManager(callback);
+  manager->Wrap(info.This());
+  return;
+}
+
+uv_loop_t *loop = uv_default_loop();
+uv_async_t async;
+
+static void notificationHandler(CFNotificationCenterRef center, void *manager, CFStringRef name, const void *object, CFDictionaryRef userInfo) {
+  async.data = manager;
+  uv_async_send(&async);
+}
+
+static void asyncSendHandler(uv_async_t *handle) {
+  (static_cast<KeyboardLayoutManager *>(handle->data))->HandleKeyboardLayoutChanged();
+}
+
+KeyboardLayoutManager::KeyboardLayoutManager(Nan::Callback *callback) : callback(callback) {
+  uv_async_init(loop, &async, (uv_async_cb) asyncSendHandler);
+
+  CFNotificationCenterAddObserver(
+      CFNotificationCenterGetDistributedCenter(),
+      this,
+      &notificationHandler,
+      kTISNotifySelectedKeyboardInputSourceChanged,
+      NULL,
+      CFNotificationSuspensionBehaviorDeliverImmediately
+  );
+}
+
+KeyboardLayoutManager::~KeyboardLayoutManager() {
+  delete callback;
+};
+
+void KeyboardLayoutManager::HandleKeyboardLayoutChanged() {
+  callback->Call(0, NULL);
+}
+
+NAN_METHOD(KeyboardLayoutManager::GetInstalledKeyboardLanguages) {
+  Nan::HandleScope scope;
+
+  @autoreleasepool {
+    std::vector<std::string> ret;
+
+    // NB: We have to do this whole rigamarole twice, once for IMEs (i.e.
+    // Japanese), and once for keyboard layouts (i.e. English).
+    NSDictionary* filter = @{ (__bridge NSString *) kTISPropertyInputSourceType : (__bridge NSString *) kTISTypeKeyboardLayout };
+    NSArray* keyboardLayouts = (NSArray *) TISCreateInputSourceList((__bridge CFDictionaryRef) filter, NO);
+
+    for (size_t i=0; i < keyboardLayouts.count; i++) {
+      TISInputSourceRef current = (TISInputSourceRef)[keyboardLayouts objectAtIndex:i];
+
+      NSArray* langs = (NSArray*) TISGetInputSourceProperty(current, kTISPropertyInputSourceLanguages);
+      std::string str = std::string([(NSString*)[langs objectAtIndex:0] UTF8String]);
+      ret.push_back(str);
+    }
+
+    filter = @{ (__bridge NSString *) kTISPropertyInputSourceType : (__bridge NSString *) kTISTypeKeyboardInputMode };
+    keyboardLayouts = (NSArray *) TISCreateInputSourceList((__bridge CFDictionaryRef) filter, NO);
+
+    for (size_t i=0; i < keyboardLayouts.count; i++) {
+      TISInputSourceRef current = (TISInputSourceRef)[keyboardLayouts objectAtIndex:i];
+
+      NSArray* langs = (NSArray*) TISGetInputSourceProperty(current, kTISPropertyInputSourceLanguages);
+      std::string str = std::string([(NSString*)[langs objectAtIndex:0] UTF8String]);
+      ret.push_back(str);
+    }
+
+    Local<Array> result = Nan::New<Array>(ret.size());
+    for (size_t i = 0; i < ret.size(); ++i) {
+       const std::string& lang = ret[i];
+       result->Set(i, Nan::New<String>(lang.data(), lang.size()).ToLocalChecked());
+    }
+
+    info.GetReturnValue().Set(result);
+  }
+}
+
+NAN_METHOD(KeyboardLayoutManager::GetCurrentKeyboardLanguage) {
+  Nan::HandleScope scope;
+  TISInputSourceRef source = TISCopyCurrentKeyboardInputSource();
+
+  NSArray* langs = (NSArray*) TISGetInputSourceProperty(source, kTISPropertyInputSourceLanguages);
+  NSString* lang = (NSString*) [langs objectAtIndex:0];
+
+  info.GetReturnValue().Set(Nan::New([lang UTF8String]).ToLocalChecked());
+}
+
+NAN_METHOD(KeyboardLayoutManager::GetCurrentKeyboardLayout) {
+  Nan::HandleScope scope;
+  TISInputSourceRef source = TISCopyCurrentKeyboardInputSource();
+  CFStringRef sourceId = (CFStringRef) TISGetInputSourceProperty(sour
